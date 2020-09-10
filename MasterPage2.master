@@ -1,0 +1,195 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+<title>Divagloss</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-titillium-250.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+    $(function () {
+        console.log("ready!");
+    });
+    $(document).ready(function () {
+        $('body').css({ 'background': '#fff url(../pil/images/main_bg_small.gif) repeat-x left 115px' });
+        console.log('printing');
+    });
+
+   
+ 
+</script>
+    <style type="text/css">
+        .style1
+        {
+            color: #FFFFFF;
+            font-family: "Comic Sans MS";
+            font-size: large;
+        }
+        .style2
+        {
+            background-color: #3333CC;
+            text-decoration: underline;
+        }
+        .style3
+        {
+            color: #000066;
+        }
+        .style4
+        {
+            color: #000066;
+        }
+        .style5
+        {
+            text-decoration: underline;
+            color: #000066;
+            font-family: Algerian;
+            font-size: x-large;
+        }
+        .style1010101
+        {
+            color: #000000;
+            font-family: "Comic Sans MS";
+            font-size: medium;
+        }
+        .style7
+        {
+            color: #660066;
+        }
+    </style>
+</head>
+<body>
+ <form id="form1" runat="server">
+    
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo">
+        <h1 class="style1010101"><strong class="style7">pilgrimage to</strong></h1>
+          <p class="style5">MATHURA-VRINDAVAN</p>
+      </div>
+      <div class="menu_nav">
+          <ul>
+              <li><a href="home.aspx"><span>Home></a></li>
+          <li><a href="abouttemple.aspx"><span>about temples</span></a></li>
+          <li><a href="login.aspx"><span>online sevices</span></a></li>
+          <li><a href="blog.html"><span>timing</span></a></li>
+          <li><a href="contact.html"><span>festivals</span></a></li>
+          <li><a href="contact.html"><span>map</span></a></li>
+        </ul>
+      </div>
+      <div class="clr"></div>
+   <%--   <div class="slider">
+        <div id="coin-slider"><a href="#"><img src="images/slide1.jpg" width="177" height="213" alt="" /></a> <a href="#"><img src="images/slide2.jpg" width="177" height="213" alt="" /></a> <a href="#"><img src="images/slide3.jpg" width="177" height="213" alt="" /></a></div>
+        <div class="clr"></div>
+      </div>--%>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+        <div class="article">
+          <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+          
+        <div>
+      
+    </div>
+
+
+
+         
+          
+          <div class="clr"></div>
+        </div>
+    
+   
+      </div>
+      <div  id="onlinesidebar" class="sidebar">
+        <div class="clr"></div>
+        <div class="gadget">
+          <h2 class="star"><span class="style1"><span class="style2"><strong>ONLINE SERVICES</strong></span></span> </h2>
+          <div class="clr"></div>
+          <ul class="sb_menu">
+            <li><a href="home.aspx" class="style3"><span class="style4">HOME</span></a></li>
+            <li><a href="book.aspx" class="style3"><span class="style4">SELECT DATE AND TRAVELLERS
+              </span></a></li>
+            <li><a href="darshan.aspx" class="style3"><span class="style4">SPECIAL ENTRY DARSHAN</span></a></li>
+            <li><a href="accomodation.aspx" class="style3"><span class="style4">ACCOMODATION</span></a></li>
+            <li><a href="prasad.aspx" class="style3"><span class="style4">ONLINE PRASAD BOOKING</span></a></li>
+            <li><a href="donation.aspx" class="style3"><span class="style4">DONATION</span></a></li>
+          </ul>
+        </div>
+     
+      </div>
+      <div id="templesidebar" class="sidebar">
+        <div class="clr"></div>
+        <div class="gadget">
+          <h2 class="star"><span class="style1"><span class="style2"><strong>About Temple</strong></span></span> </h2>
+          <div class="clr"></div>
+          <ul class="sb_menu">
+            <li><a href="home.aspx" class="style3"><span class="">Mathura</span></a></li>
+            <li><a href="book.aspx" class="style3"><span class="style4">     Temple1
+              </span></a></li>
+            <li><a href="darshan.aspx" class="style3"><span class="style4">SPECIAL ENTRY DARSHAN</span></a></li>
+            <li><a href="accomodation.aspx" class="style3"><span class="style4">ACCOMODATION</span></a></li>
+            <li><a href="prasad.aspx" class="style3"><span class="style4">ONLINE PRASAD BOOKING</span></a></li>
+            <li><a href="donation.aspx" class="style3"><span class="style4">DONATION</span></a></li
+             <li><a href="home.aspx" class="style3"><span class="style4">HOME</span></a></li>
+            <li><a href="book.aspx" class="style3"><span class="style4">SELECT DATE AND TRAVELLERS
+              </span></a></li>
+            <li><a href="darshan.aspx" class="style3"><span class="style4">SPECIAL ENTRY DARSHAN</span></a></li>
+            <li><a href="accomodation.aspx" class="style3"><span class="style4">ACCOMODATION</span></a></li>
+            <li><a href="prasad.aspx" class="style3"><span class="style4">ONLINE PRASAD BOOKING</span></a></li>
+            <li><a href="donation.aspx" class="style3"><span class="style4">DONATION</span></a></li> <li><a href="home.aspx" class="style3"><span class="style4">HOME</span></a></li>
+            <li><a href="book.aspx" class="style3"><span class="style4">SELECT DATE AND TRAVELLERS
+              </span></a></li>
+            <li><a href="darshan.aspx" class="style3"><span class="style4">SPECIAL ENTRY DARSHAN</span></a></li>
+            <li><a href="accomodation.aspx" class="style3"><span class="style4">ACCOMODATION</span></a></li>
+            <li><a href="prasad.aspx" class="style3"><span class="style4">ONLINE PRASAD BOOKING</span></a></li>
+            <li><a href="donation.aspx" class="style3"><span class="style4">DONATION</span></a></li> <li><a href="home.aspx" class="style3"><span class="style4">HOME</span></a></li>
+            <li><a href="book.aspx" class="style3"><span class="style4">SELECT DATE AND TRAVELLERS
+              </span></a></li>
+            <li><a href="darshan.aspx" class="style3"><span class="style4">SPECIAL ENTRY DARSHAN</span></a></li>
+            <li><a href="accomodation.aspx" class="style3"><span class="style4">ACCOMODATION</span></a></li>
+            <li><a href="prasad.aspx" class="style3"><span class="style4">ONLINE PRASAD BOOKING</span></a></li>
+            <li><a href="donation.aspx" class="style3"><span class="style4">DONATION</span></a></li> <li><a href="home.aspx" class="style3"><span class="style4">HOME</span></a></li>
+            <li><a href="book.aspx" class="style3"><span class="style4">SELECT DATE AND TRAVELLERS
+              </span></a></li>
+            <li><a href="darshan.aspx" class="style3"><span class="style4">SPECIAL ENTRY DARSHAN</span></a></li>
+            <li><a href="accomodation.aspx" class="style3"><span class="style4">ACCOMODATION</span></a></li>
+            <li><a href="prasad.aspx" class="style3"><span class="style4">ONLINE PRASAD BOOKING</span></a></li>
+            <li><a href="donation.aspx" class="style3"><span class="style4">DONATION</span></a></li> <li><a href="home.aspx" class="style3"><span class="style4">HOME</span></a></li>
+            <li><a href="book.aspx" class="style3"><span class="style4">SELECT DATE AND TRAVELLERS
+              </span></a></li>
+            <li><a href="darshan.aspx" class="style3"><span class="style4">SPECIAL ENTRY DARSHAN</span></a></li>
+            <li><a href="accomodation.aspx" class="style3"><span class="style4">ACCOMODATION</span></a></li>
+            <li><a href="prasad.aspx" class="style3"><span class="style4">ONLINE PRASAD BOOKING</span></a></li>
+            <li><a href="donation.aspx" class="style3"><span class="style4">DONATION</span></a></li>
+          </ul>
+        </div>
+     
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer_resize">
+      <p class="lf">Copyright &copy; <a href="#">Domain Name</a>. All Rights Reserved</p>
+      <p class="rf">Design by <a target="_blank" href="http://www.dreamtemplate.com/">DreamTemplate</a></p>
+      <div style="clear:both;"></div>
+    </div>
+  </div>
+</div>
+</form>
+</body>
+</html>
+

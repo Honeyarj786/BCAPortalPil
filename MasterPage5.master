@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+<title>Divagloss</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-titillium-250.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+    <style type="text/css">
+        .style1
+        {
+            color: #FFFFFF;
+            font-family: "Comic Sans MS";
+            font-size: large;
+        }
+        .style2
+        {
+            background-color: #3333CC;
+            text-decoration: underline;
+        }
+        .style3
+        {
+            color: #000066;
+        }
+        .style4
+        {
+            background-color: #66CCFF;
+        }
+        .style5
+        {
+            text-decoration: underline;
+            color: #000066;
+            font-family: Algerian;
+            font-size: x-large;
+        }
+        .style6
+        {
+            color: #000000;
+            font-family: "Comic Sans MS";
+            font-size: medium;
+        }
+        .style7
+        {
+            color: #660066;
+        }
+    </style>
+</head>
+<body>
+ <form id="form1" runat="server">
+    
+<div class="main1">
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo">
+        <h1 class="style6"><strong class="style7">pilgrimage to</strong></h1>
+          <p class="style5">MATHURA-VRINDAVAN</p>
+      </div>
+      <div class="menu_nav">
+          <ul>
+              <li><a href="home.aspx"><span>Home></a></li>
+          <li><a href="support.html"><span>about temples</span></a></li>
+          <li><a href="login.aspx"><span>online sevices</span></a></li>
+          <li><a href="blog.html"><span>timing</span></a></li>
+          <li><a href="contact.html"><span>festivals</span></a></li>
+          <li><a href="contact.html"><span>map</span></a></li>
+        </ul>
+      </div>
+      <div class="clr"></div>
+   <%--   <div class="slider">
+        <div id="coin-slider"><a href="#"><img src="images/slide1.jpg" width="935" height="307" alt="" /></a> <a href="#"><img src="images/slide2.jpg" width="935" height="307" alt="" /></a> <a href="#"><img src="images/slide3.jpg" width="935" height="307" alt="" /></a></div>
+        <div class="clr"></div>
+      </div>--%>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+        <div class="article">
+        
+          
+        <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+
+
+         
+          
+          <div class="clr"></div>
+        </div>
+    
+   
+      </div>
+      <div class="sidebar">
+        <div class="clr"></div>
+        <div class="gadget">
+          <h2 class="star"><span class="style1"><span class="style2"><strong>ONLINE SERVICES</strong></span></span> </h2>
+          <div class="clr"></div>
+          <ul class="sb_menu">
+            <li><a href="home.aspx" class="style3"><span class="style4">HOME</span></a></li>
+            <li><a href="abouttemple.aspx" class="style3"><span class="style4">ABOUT TEMPLE</span></a></li>
+            <li><a href="login.aspx" class="style3"><span class="style4">ONLINE SERVICES</span></a></li>
+            <li><a href="timing.aspx" class="style3"><span class="style4">TIMING</span></a></li>
+            <li><a href="festivals.aspx" class="style3"><span class="style4">FESTIVALS</span></a></li>
+            <li><a href="map.aspx" class="style3"><span class="style4">MAP</span></a></li>
+          </ul>
+        </div>
+     
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer_resize">
+      <p class="lf">Copyright &copy; <a href="#">Domain Name</a>. All Rights Reserved</p>
+      <p class="rf">Design by <a target="_blank" href="http://www.dreamtemplate.com/">DreamTemplate</a></p>
+      <div style="clear:both;"></div>
+    </div>
+  </div>
+</div>
+</form>
+</body>
+</html>
+
