@@ -1,24 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "pil", "..\..\..\..\..\..\harry\pil\", "{2C42EC51-6A59-4AC5-AD22-63B1E6B651E2}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "pil", ".", "{38B4EAAD-CF9E-4682-A66E-8C0BF29EEF90}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/pil"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\harry\pil\"
+		Debug.AspNetCompiler.PhysicalPath = "..\pil\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\pil\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/pil"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\harry\pil\"
+		Release.AspNetCompiler.PhysicalPath = "..\pil\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\pil\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "62971"
+		VWDPort = "59981"
 	EndProjectSection
 EndProject
 Global
@@ -26,8 +26,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2C42EC51-6A59-4AC5-AD22-63B1E6B651E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C42EC51-6A59-4AC5-AD22-63B1E6B651E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38B4EAAD-CF9E-4682-A66E-8C0BF29EEF90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B4EAAD-CF9E-4682-A66E-8C0BF29EEF90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
