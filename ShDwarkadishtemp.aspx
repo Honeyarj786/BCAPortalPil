@@ -56,7 +56,7 @@
         </div>
     </div>--%>
      <p class="infopost"><%--Posted <span class="date">on 11 sep 2018</span> by <a href="#">Admin</a> &nbsp;&nbsp;|&nbsp;&nbsp; Filed under <a href="#">templates</a>, <a href="#">internet</a> <a href="#" class="com"><span>1--%>
-              <span class="style3">MATHURA</span></p>
+              <span class="style3">Dwarkadish Temple</span></p>
           <div class="clr"></div>
           <%--<div class="img"><img src="images/mathura.jpg" width="177" height="213" alt="" class="fl" /></div>--%>
           <div class="post_content" style="font-size: small;  text-align: justify;

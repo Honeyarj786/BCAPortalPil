@@ -3,6 +3,12 @@
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<script>
+    $(function () {
+        $('#onlinesidebar').show();
+        $('#templesidebar').hide();
+    });
+    </script>
     <p style="font-family: 'Comic Sans MS'; font-size: large; text-decoration: underline; color: #000066">
         <strong>SELECT DATE AND TRAVELLERS</strong><cc1:ToolkitScriptManager 
             ID="ToolkitScriptManager1" runat="server">

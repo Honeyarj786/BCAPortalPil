@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="banke.aspx.cs" Inherits="banke" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<script>
+    $(function () {
+        $('#onlinesidebar').show();
+        $('#templesidebar').hide();
+    });
+    </script>
     <p style="font-family: 'Comic Sans MS'; font-size: small; " class="style3">
         <strong>SPECIAL ENTRY DARSHAN OF</strong></p>
     <p style="font-family: 'Comic Sans MS'; font-size: large; text-decoration: underline" 

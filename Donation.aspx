@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="Donation.aspx.cs" Inherits="Donation" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<script>
+    $(function () {
+        $('#onlinesidebar').show();
+        $('#templesidebar').hide();
+    });
+    </script>
     <p style="font-size: x-large; font-family: 'Comic Sans MS'; text-decoration: underline" 
         class="style3">
     <strong>DONATION</strong></p>

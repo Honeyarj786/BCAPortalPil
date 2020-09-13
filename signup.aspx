@@ -3,6 +3,12 @@
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<script>
+    $(function () {
+        $('#onlinesidebar').hide();
+        $('#templesidebar').hide();
+    });
+    </script>
     <p style="font-size: large; color: #000066; text-decoration: underline; font-family: 'Comic Sans MS'">
         <strong>CREATE YOUR ACCOUNT </strong>
         <cc1:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">

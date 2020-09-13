@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="Darshan.aspx.cs" Inherits="Darshan" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<script>
+    $(function () {
+        $('#onlinesidebar').show();
+        $('#templesidebar').hide();
+    });
+    </script>
     <p style="font-size: large; color: #000066; text-decoration: underline; font-family: 'Comic Sans MS'">
         <strong>SPECIAL ENTRY DASHAN</strong></p>
     <p>

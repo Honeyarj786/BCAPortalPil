@@ -29,8 +29,6 @@
     </font>
     <a href="images/gita-temple-near-mathura-mathura-300x225.jpg">
     </a>
-    <img src="images/gita-temple-near-mathura-mathura-300x225.jpg" />
-
-</div>
+    &nbsp;</div>
 </asp:Content>
 
