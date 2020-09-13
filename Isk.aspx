@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="Isk.aspx.cs" Inherits="Isk" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<script>
+    $(function () {
+        $('#onlinesidebar').hide();
+        $('#templesidebar').show();
+    });
+    </script>
 
  <p class="infopost"><%--Posted <span class="date">on 11 sep 2018</span> by <a href="#">Admin</a> &nbsp;&nbsp;|&nbsp;&nbsp; Filed under <a href="#">templates</a>, <a href="#">internet</a> <a href="#" class="com"><span>1--%>
               <span class="style3">ISCKON Temple</span></p>
@@ -16,6 +22,13 @@
               </strong>
           </div>
           <div class="clr"></div>
+          <iframe
+  height="450"
+  frameborder="0" style="border-style: none; border-color: inherit; border-width: 0; width: 827px;"
+  
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC8O-rCO8RnEt8OwYEnsgFANQ6cFi-DsNw&q=(ISKCON Vrindavan),Vrindavan+UP" 
+        allowfullscreen>
+</iframe>
            
 </asp:Content>
 

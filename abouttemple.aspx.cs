@@ -53,7 +53,7 @@ public partial class abouttemple : System.Web.UI.Page
     }
     protected void LinkButton13_Click(object sender, EventArgs e)
     {
-        Response.Redirect("");
+        Response.Redirect("abban.aspx");
     }
     protected void LinkButton14_Click(object sender, EventArgs e)
     {
@@ -70,5 +70,9 @@ public partial class abouttemple : System.Web.UI.Page
     protected void LinkButton17_Click(object sender, EventArgs e)
     {
         Response.Redirect("Gok.aspx");
+    }
+    protected void LinkButton18_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Jug.aspx");
     }
 }  

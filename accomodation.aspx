@@ -40,11 +40,17 @@
     <tr>
         <td style="font-size: small; font-family: 'Comic Sans MS'; color: #000066; height: 30px;">
             <strong>SELECT Mathura Stay Date </strong></td>
-        <td style="height: 30px">     
+        <td style="height: 30px"> 
+        From:    
          <asp:TextBox ID="Mathuradate" runat="server" style="color: #000066"></asp:TextBox>
                 <cc1:CalendarExtender ID="tb13_CalendarExtender" runat="server" 
                     Enabled="True" TargetControlID="Mathuradate">
-                </cc1:CalendarExtender>    
+                </cc1:CalendarExtender> 
+                To:
+                <asp:TextBox ID="Mathuradateto" runat="server" style="color: #000066"></asp:TextBox>
+                <cc1:CalendarExtender ID="CalendarExtender1" runat="server" 
+                    Enabled="True" TargetControlID="Mathuradateto">
+                </cc1:CalendarExtender>   
 
 
         </td>
@@ -67,10 +73,16 @@
      <tr>
         <td style="font-size: small; font-family: 'Comic Sans MS'; color: #000066; height: 30px;">
             <strong>SELECT Vrindavan Stay Date </strong></td>
-        <td style="height: 30px">      
+        <td style="height: 30px">   
+        From:   
          <asp:TextBox ID="Vrindavandate" runat="server" style="color: #000066"></asp:TextBox>
                 <cc1:CalendarExtender ID="Vrindavandate_CalendarExtender" runat="server" 
                     Enabled="True" TargetControlID="Vrindavandate">
+                </cc1:CalendarExtender> 
+                To:  
+                <asp:TextBox ID="Vrindavandateto" runat="server" style="color: #000066"></asp:TextBox>
+                <cc1:CalendarExtender ID="CalendarExtender2" runat="server" 
+                    Enabled="True" TargetControlID="Vrindavandateto">
                 </cc1:CalendarExtender>   
 
 
@@ -87,6 +99,17 @@
                 <asp:ListItem>Hotel1</asp:ListItem>
                 <asp:ListItem>Hotel2</asp:ListItem>
             </asp:DropDownList>
+
+
+        </td>
+    </tr>
+    <tr>
+        <td style="font-size: small; font-family: 'Comic Sans MS'; color: #000066; height: 30px;">
+            &nbsp;</td>
+        <td style="height: 30px">      
+
+
+            <asp:Label ID="Label1" runat="server" Text="Total"></asp:Label>
 
 
         </td>

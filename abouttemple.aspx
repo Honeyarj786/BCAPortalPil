@@ -4,7 +4,7 @@
     <script>
     $(function () {
         $('#onlinesidebar').hide();
-        $('#templesidebar').hide();
+        $('#templesidebar').show();
     });
     </script>
     <p class="style3" style="font-size: medium; font-family: 'Comic Sans MS'">
@@ -23,7 +23,7 @@
                     <asp:LinkButton ID="LinkButton4" runat="server" onclick="LinkButton4_Click">Shri Krishna Janmabhoomi Temple</asp:LinkButton>
                 </td>
                 <td style="width: 353px">
-                    <asp:LinkButton ID="LinkButton10" runat="server" onclick="LinkButton10_Click">Garund Govind Temple</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton10" runat="server" onclick="LinkButton10_Click">Shri Garud Govind Ji Temple</asp:LinkButton>
                 </td>
             </tr>
             <tr>
@@ -34,20 +34,13 @@
                     <asp:LinkButton ID="LinkButton11" runat="server" onclick="LinkButton11_Click">Prem Mandir</asp:LinkButton>
                 </td>
             </tr>
-            <tr>
-                <td>
-                    <asp:LinkButton ID="LinkButton6" runat="server" onclick="LinkButton6_Click">Geeta Mandir</asp:LinkButton>
-                </td>
-                <td style="width: 353px">
-                    <asp:LinkButton ID="LinkButton12" runat="server" onclick="LinkButton12_Click">Shri Jugalkishore Ji Temple</asp:LinkButton>
-                </td>
-            </tr>
+            
             <tr>
                 <td>
                     <asp:LinkButton ID="LinkButton7" runat="server" onclick="LinkButton7_Click">Keshav Dev Temple </asp:LinkButton>
                 </td>
                 <td style="width: 353px">
-                    <asp:LinkButton ID="LinkButton13" runat="server" onclick="LinkButton13_Click"> Shri Banke Biahri Temple</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton13" runat="server" onclick="LinkButton13_Click"> Shri Banke Bihari Temple</asp:LinkButton>
                 </td>
             </tr>
             <tr>
@@ -55,12 +48,12 @@
                     <asp:LinkButton ID="LinkButton8" runat="server" onclick="LinkButton8_Click">Shri Bhuteshwar Mahadev Temple	</asp:LinkButton>
                 </td>
                 <td style="width: 353px">
-                    <asp:LinkButton ID="LinkButton14" runat="server" onclick="LinkButton14_Click">Shri Madan Mohan Temple	</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton14" runat="server" onclick="LinkButton14_Click">Shri Radha Madan Mohan Ji Temple, </asp:LinkButton>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:LinkButton ID="LinkButton9" runat="server" onclick="LinkButton9_Click">Maa Chamunda Temple</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton9" runat="server" onclick="LinkButton9_Click">Chamunda Devi Mandir</asp:LinkButton>
                 </td>
                 <td style="width: 353px">
                     <asp:LinkButton ID="LinkButton15" runat="server" onclick="LinkButton15_Click">Nidhivan Temple</asp:LinkButton>
@@ -80,7 +73,22 @@
                     <asp:LinkButton ID="LinkButton17" runat="server" onclick="LinkButton17_Click">Shri Radha Gokulananda Ji Temple</asp:LinkButton>
                 </td>
             </tr>
-                               
+                  <tr>
+                <td>
+                    
+                </td>
+                <td style="width: 353px">
+                    <asp:LinkButton ID="LinkButton6" runat="server" onclick="LinkButton6_Click">Geeta Mandir</asp:LinkButton>
+                </td>
+            </tr>             
+                  <tr>
+                <td>
+                    
+                    &nbsp;</td>
+                <td style="width: 353px">
+                    <asp:LinkButton ID="LinkButton18" runat="server" onclick="LinkButton18_Click">Shri JugalKishore Ji Temple</asp:LinkButton>
+                </td>
+            </tr>             
          </table>
     </p>
 </asp:Content>
