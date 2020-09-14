@@ -120,10 +120,11 @@
           <div class="clr"></div>
           <ul class="sb_menu">
             <li><a href="home.aspx" class="style3"><span class="style4">HOME</span></a></li>
-            <li><a href="book.aspx" class="style3"><span class="style4">SELECT DATE AND TRAVELLERS
-              </span></a></li>
+            <%--<li><a href="book.aspx" class="style3"><span class="style4">SELECT DATE AND TRAVELLERS
+              </span></a></li>--%>
+               <li><a href="accomodation.aspx" class="style3"><span class="style4">ACCOMODATION</span></a></li>
             <li><a href="darshan.aspx" class="style3"><span class="style4">SPECIAL ENTRY DARSHAN</span></a></li>
-            <li><a href="accomodation.aspx" class="style3"><span class="style4">ACCOMODATION</span></a></li>
+           
             <li><a href="prasad.aspx" class="style3"><span class="style4">ONLINE PRASAD BOOKING</span></a></li>
             <li><a href="donation.aspx" class="style3"><span class="style4">DONATION</span></a></li>
           </ul>

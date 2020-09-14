@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Globalization;
 
 public partial class accomodation : System.Web.UI.Page
 {
@@ -53,7 +54,7 @@ public partial class accomodation : System.Web.UI.Page
         Response.Write("data saved");
 
 
-        Response.Redirect("book.aspx");
+        //Response.Redirect("book.aspx");
     }
     protected void Mathurachkbox_CheckedChanged(object sender, EventArgs e)
     {
@@ -98,5 +99,29 @@ public partial class accomodation : System.Web.UI.Page
                 Button1.Visible = false;
             }
         }
+    }
+
+
+
+    protected void LinkButton1_Click(object sender, EventArgs e)
+    {
+
+        CultureInfo provider = CultureInfo.InvariantCulture;
+        // It throws Argument null exception  
+        DateTime mathuradateto = DateTime.ParseExact(Mathuradateto.Text, "M/d/yyyy", provider); 
+        DateTime vrindaDateto = DateTime.ParseExact(Vrindavandateto.Text, "M/d/yyyy", provider); 
+        DateTime mathuradatefrom = DateTime.ParseExact(Mathuradate.Text, "M/d/yyyy", provider); 
+        DateTime  vrindadatefrom= DateTime.ParseExact(Vrindavandate.Text, "M/d/yyyy", provider);
+        int noofDaysinMathura = (mathuradateto.Subtract(mathuradatefrom)).Days;
+        int noofDaysinVrindha = (vrindaDateto.Subtract(vrindadatefrom)).Days;
+        int pricePerday = 500;
+
+        int MathuraTotal = noofDaysinMathura * int.Parse(string.IsNullOrWhiteSpace(noOfroomsMathura.Text)?"0":noOfroomsMathura.Text) * pricePerday;
+
+        int VrindaTotal = noofDaysinVrindha * int.Parse(string.IsNullOrWhiteSpace(NoofroomsVrindha.Text) ? "0" : NoofroomsVrindha.Text) * pricePerday;
+
+        int Guidecharges = (noofDaysinMathura + noofDaysinVrindha) *(guideneeded.Text=="Yes"?1:0) * 400;
+        totalAccomodation.Text = (MathuraTotal + VrindaTotal + Guidecharges).ToString();
+
     }
 }

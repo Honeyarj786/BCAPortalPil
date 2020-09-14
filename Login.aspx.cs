@@ -31,7 +31,7 @@ public partial class Login : System.Web.UI.Page
         adp.Fill(dt);
         if (dt.Rows.Count > 0)
         {
-            Response.Redirect("book.aspx");
+            Response.Redirect("accomodation.aspx");
         }
         else
         {
