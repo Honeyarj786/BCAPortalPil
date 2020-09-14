@@ -31,6 +31,8 @@ public partial class Login : System.Web.UI.Page
         adp.Fill(dt);
         if (dt.Rows.Count > 0)
         {
+            
+            Session["Userid"] = dt.Rows[0]["id"];
             Response.Redirect("accomodation.aspx");
         }
         else

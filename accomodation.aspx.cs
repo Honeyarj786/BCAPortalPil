@@ -37,12 +37,12 @@ public partial class accomodation : System.Web.UI.Page
         cm.Parameters.AddWithValue("@IsVrindavanSelected", Vrindavanchkbox.Checked);
         cm.Parameters.AddWithValue("@MathuraDate", Mathuradate.Text);
         cm.Parameters.AddWithValue("@VrindavanDate", Vrindavandate.Text);
-        cm.Parameters.AddWithValue("@VrindavanDate", Vrindavandateto.Text);
+        cm.Parameters.AddWithValue("@Vrindavanto", Vrindavandateto.Text);
         cm.Parameters.AddWithValue("@MathuraHotel", MathuraHoteldd.Text);
-        cm.Parameters.AddWithValue("@MathuraDate", Mathuradateto.Text);
+        cm.Parameters.AddWithValue("@Mathuradateto", Mathuradateto.Text);
         cm.Parameters.AddWithValue("@VrindavanHotel", Vrindd.Text);
-        cm.Parameters.AddWithValue("@Total", DBNull.Value);
-        cm.Parameters.AddWithValue("@userid", DBNull.Value );
+        cm.Parameters.AddWithValue("@Total", totalAccomodation.Text);
+        cm.Parameters.AddWithValue("@userid", int.Parse (Session["Userid"].ToString()));
         
         
 
