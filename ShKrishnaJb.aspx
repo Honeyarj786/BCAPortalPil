@@ -1,6 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="ShKrishnaJb.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <script>
+    $(function () {
+        $('#onlinesidebar').hide();
+        $('#templesidebar').show();
+    });
+    </script>
+
+
+
     <h2 _msthash="337285" _msttexthash="516334" 
         style="box-sizing: border-box; color: rgb(51, 51, 51); margin: 0px 0px 20px; font: 18px / 27px &quot;Antic Slab&quot;, Arial, Helvetica, sans-serif; padding-bottom: 0px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; text-align: left;">
         Shri Krishna Janmabhoomi</h2>
@@ -28,13 +37,7 @@
         The Keshav Dev temple is the oldest in Shri Krishna&#39;s birth place. The Keshav 
         Dev Temple has the most beautiful hair of Lord Shri Krishna.</p>
     <p style="box-sizing: border-box; margin: 0px 0px 20px; color: rgb(116, 116, 116); font-family: &quot;PT Sans&quot;, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
-        <a href="https://shrimathuraji.com/wp-content/uploads/2016/09/keshav-dev-temple-shrimathuraji.jpg" 
-            style="box-sizing: border-box; text-decoration: none; color: rgb(51, 51, 51);">
-        <img alt="keshav-dev-temple-shrimathuraji" 
-            class="alignnone size-full wp-image-11102" height="440" 
-            src="https://shrimathuraji.com/wp-content/uploads/2016/09/keshav-dev-temple-shrimathuraji.jpg" 
-            style="box-sizing: border-box; border-style: none; vertical-align: top; max-width: 100%; height: auto;" 
-            width="600" /></a></p>
+        &nbsp;</p>
     <p _msthash="322327" _msttexthash="226582343" 
         style="box-sizing: border-box; margin: 0px 0px 20px; color: rgb(116, 116, 116); font-family: &quot;PT Sans&quot;, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; text-align: left;">
         The Nirvana of Bhagwat Bhawan was followed by 17 years of work. In This very 
@@ -54,13 +57,7 @@
         was Potra Kunde.</p>
     <br class="Apple-interchange-newline" />
     <p style="box-sizing: border-box; margin: 0px 0px 20px; color: rgb(116, 116, 116); font-family: &quot;PT Sans&quot;, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
-        <a href="https://shrimathuraji.com/wp-content/uploads/2016/09/potra-kund-mathura-shrimathuraji.jpg" 
-            style="box-sizing: border-box; text-decoration: none; color: rgb(51, 51, 51);">
-        <img alt="Potra Kund Mathura" class="alignnone size-full wp-image-11103" 
-            height="512" 
-            src="https://shrimathuraji.com/wp-content/uploads/2016/09/potra-kund-mathura-shrimathuraji.jpg" 
-            style="box-sizing: border-box; border-style: none; vertical-align: top; max-width: 100%; height: auto;" 
-            width="960" /></a></p>
+        &nbsp;</p>
     <div class="fusion-fullwidth fullwidth-box" 
         style="box-sizing: border-box; color: rgb(116, 116, 116); font-family: &quot;PT Sans&quot;, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; background-attachment: scroll; background-position: left top; background-repeat: no-repeat; background-size: cover; border-color: rgb(234, 233, 233); border-bottom-width: 0px; border-top-width: 0px; border-bottom-style: solid; border-top-style: solid; padding: 20px 0px 0px;">
         <div class="avada-row" 
@@ -73,5 +70,12 @@
             </div>
         </div>
     </div>
+    <iframe
+  height="450"
+  frameborder="0" style="border-style: none; border-color: inherit; border-width: 0; width: 827px;"
+  
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC8O-rCO8RnEt8OwYEnsgFANQ6cFi-DsNw&q=Shri Krishna Janmasthan Temple, Mathura" 
+        allowfullscreen>
+</iframe>
 </asp:Content>
 

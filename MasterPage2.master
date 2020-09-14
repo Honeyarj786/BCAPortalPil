@@ -76,10 +76,10 @@
       </div>
       <div class="menu_nav">
           <ul>
-              <li><a href="home.aspx"><span>Home></a></li>
+              <li><a href="home.aspx"><span>Home</a></li>
           <li><a href="abouttemple.aspx"><span>about temples</span></a></li>
           <li><a href="login.aspx"><span>online sevices</span></a></li>
-          <li><a href="blog.html"><span>timing</span></a></li>
+          <li><a href="timing.aspx"><span>timing</span></a></li>
           <li><a href="contact.html"><span>festivals</span></a></li>
           <li><a href="contact.html"><span>map</span></a></li>
         </ul>
@@ -120,10 +120,11 @@
           <div class="clr"></div>
           <ul class="sb_menu">
             <li><a href="home.aspx" class="style3"><span class="style4">HOME</span></a></li>
-            <li><a href="book.aspx" class="style3"><span class="style4">SELECT DATE AND TRAVELLERS
-              </span></a></li>
+            <%--<li><a href="book.aspx" class="style3"><span class="style4">SELECT DATE AND TRAVELLERS
+              </span></a></li>--%>
+               <li><a href="accomodation.aspx" class="style3"><span class="style4">ACCOMODATION</span></a></li>
             <li><a href="darshan.aspx" class="style3"><span class="style4">SPECIAL ENTRY DARSHAN</span></a></li>
-            <li><a href="accomodation.aspx" class="style3"><span class="style4">ACCOMODATION</span></a></li>
+           
             <li><a href="prasad.aspx" class="style3"><span class="style4">ONLINE PRASAD BOOKING</span></a></li>
             <li><a href="donation.aspx" class="style3"><span class="style4">DONATION</span></a></li>
           </ul>
@@ -136,44 +137,23 @@
           <h2 class="star"><span class="style1"><span class="style2"><strong>About Temple</strong></span></span> </h2>
           <div class="clr"></div>
           <ul class="sb_menu">
-            <li><a href="home.aspx" class="style3"><span class="">Mathura</span></a></li>
-            <li><a href="book.aspx" class="style3"><span class="style4">     Temple1
-              </span></a></li>
-            <li><a href="darshan.aspx" class="style3"><span class="style4">SPECIAL ENTRY DARSHAN</span></a></li>
-            <li><a href="accomodation.aspx" class="style3"><span class="style4">ACCOMODATION</span></a></li>
-            <li><a href="prasad.aspx" class="style3"><span class="style4">ONLINE PRASAD BOOKING</span></a></li>
-            <li><a href="donation.aspx" class="style3"><span class="style4">DONATION</span></a></li
-             <li><a href="home.aspx" class="style3"><span class="style4">HOME</span></a></li>
-            <li><a href="book.aspx" class="style3"><span class="style4">SELECT DATE AND TRAVELLERS
-              </span></a></li>
-            <li><a href="darshan.aspx" class="style3"><span class="style4">SPECIAL ENTRY DARSHAN</span></a></li>
-            <li><a href="accomodation.aspx" class="style3"><span class="style4">ACCOMODATION</span></a></li>
-            <li><a href="prasad.aspx" class="style3"><span class="style4">ONLINE PRASAD BOOKING</span></a></li>
-            <li><a href="donation.aspx" class="style3"><span class="style4">DONATION</span></a></li> <li><a href="home.aspx" class="style3"><span class="style4">HOME</span></a></li>
-            <li><a href="book.aspx" class="style3"><span class="style4">SELECT DATE AND TRAVELLERS
-              </span></a></li>
-            <li><a href="darshan.aspx" class="style3"><span class="style4">SPECIAL ENTRY DARSHAN</span></a></li>
-            <li><a href="accomodation.aspx" class="style3"><span class="style4">ACCOMODATION</span></a></li>
-            <li><a href="prasad.aspx" class="style3"><span class="style4">ONLINE PRASAD BOOKING</span></a></li>
-            <li><a href="donation.aspx" class="style3"><span class="style4">DONATION</span></a></li> <li><a href="home.aspx" class="style3"><span class="style4">HOME</span></a></li>
-            <li><a href="book.aspx" class="style3"><span class="style4">SELECT DATE AND TRAVELLERS
-              </span></a></li>
-            <li><a href="darshan.aspx" class="style3"><span class="style4">SPECIAL ENTRY DARSHAN</span></a></li>
-            <li><a href="accomodation.aspx" class="style3"><span class="style4">ACCOMODATION</span></a></li>
-            <li><a href="prasad.aspx" class="style3"><span class="style4">ONLINE PRASAD BOOKING</span></a></li>
-            <li><a href="donation.aspx" class="style3"><span class="style4">DONATION</span></a></li> <li><a href="home.aspx" class="style3"><span class="style4">HOME</span></a></li>
-            <li><a href="book.aspx" class="style3"><span class="style4">SELECT DATE AND TRAVELLERS
-              </span></a></li>
-            <li><a href="darshan.aspx" class="style3"><span class="style4">SPECIAL ENTRY DARSHAN</span></a></li>
-            <li><a href="accomodation.aspx" class="style3"><span class="style4">ACCOMODATION</span></a></li>
-            <li><a href="prasad.aspx" class="style3"><span class="style4">ONLINE PRASAD BOOKING</span></a></li>
-            <li><a href="donation.aspx" class="style3"><span class="style4">DONATION</span></a></li> <li><a href="home.aspx" class="style3"><span class="style4">HOME</span></a></li>
-            <li><a href="book.aspx" class="style3"><span class="style4">SELECT DATE AND TRAVELLERS
-              </span></a></li>
-            <li><a href="darshan.aspx" class="style3"><span class="style4">SPECIAL ENTRY DARSHAN</span></a></li>
-            <li><a href="accomodation.aspx" class="style3"><span class="style4">ACCOMODATION</span></a></li>
-            <li><a href="prasad.aspx" class="style3"><span class="style4">ONLINE PRASAD BOOKING</span></a></li>
-            <li><a href="donation.aspx" class="style3"><span class="style4">DONATION</span></a></li>
+            <li><a href="abouttemple.aspx" class="style3"><span class="">Mathura</span></a></li>
+            <li><a href="ShKrishnaJb.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Krishna Janmabhoomi Temple</span></a></li>
+            <li><a href="ShDwarkadishtemp.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Dwarkadhish Temple</span></a></li>
+            <li><a href="Gitaman.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Geeta Mandir</span></a></li>
+            <li><a href="Kes.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Keshav Deo Temple</span></a></li>
+            <li><a href="Bhut.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Bhuteshwar Mahadev Temple</span></a></li>
+              
+             <li><a href="Cham.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Maa Chamunda Temple</span></a></li>
+            <li><a href="abouttemple.aspx" class="style3"><span class="">Vrindavan</span></a></li>
+            <li><a href="Gov.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Garud Govind Ji Temple</span></a></li>
+            <li><a href="Pre.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Prem Mandir</span></a></li>
+            <li><a href="jug.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Jugal Kishore Ji Temple</span></a></li>
+            <li><a href="abban.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Banke Bihari Temple</span></a></li> 
+            <li><a href="Mad.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Radha Madan Mohan Ji Temple </span></a></li> 
+            <li><a href="Nid.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Nidhivan Temple</span></a></li>
+            <li><a href="Isk.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;ISCKON Temple</span></a></li>
+            <li><a href="Gok.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Radha Gokulananda Ji Temple </span></a></li>
           </ul>
         </div>
      

@@ -1,6 +1,14 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage5.master" AutoEventWireup="true" CodeFile="timingm.aspx.cs" Inherits="timingm" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="timingm.aspx.cs" Inherits="timingm" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+
+<script>
+    $(function () {
+        $('#onlinesidebar').hide();
+        $('#templesidebar').hide();
+    });
+    </script>
     <p>
         <span class="style4" style="font-size: medium"><strong>&nbsp;</strong><span><strong><span class="style3" style="font-size: medium">TIMING OF </span></strong>
         </span></span><span>

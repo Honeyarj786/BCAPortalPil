@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="Gitaman.aspx.cs" Inherits="Gitaman" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<script>
+    $(function () {
+        $('#onlinesidebar').hide();
+        $('#templesidebar').show();
+    });
+    </script>
 <div>
 <%--<a href="images/gita-temple-near-mathura-mathura-300x225.jpg">
 </a>--%>
@@ -29,8 +35,13 @@
     </font>
     <a href="images/gita-temple-near-mathura-mathura-300x225.jpg">
     </a>
-    <img src="images/gita-temple-near-mathura-mathura-300x225.jpg" />
-
-</div>
+    &nbsp;</div>
+    <iframe
+  height="450"
+  frameborder="0" style="border-style: none; border-color: inherit; border-width: 0; width: 827px;"
+  
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC8O-rCO8RnEt8OwYEnsgFANQ6cFi-DsNw&q=Sarveshwar Geeta Mandir" 
+        allowfullscreen>
+</iframe>
 </asp:Content>
 

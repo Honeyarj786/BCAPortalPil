@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="prasad.aspx.cs" Inherits="prasad" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<script>
+    $(function () {
+        $('#onlinesidebar').show();
+        $('#templesidebar').hide();
+    });
+    </script>
 <p class="style3" 
         style="font-size: medium; font-family: 'Comic Sans MS'; text-decoration: underline">
     <strong>BUY PRASAD ONLINE</strong></p>

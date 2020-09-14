@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="abouttemple.aspx.cs" Inherits="abouttemple" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<script>
+    <script>
     $(function () {
         $('#onlinesidebar').hide();
-        $('#templesidebar').hide();
+        $('#templesidebar').show();
     });
     </script>
     <p class="style3" style="font-size: medium; font-family: 'Comic Sans MS'">
@@ -15,101 +15,81 @@
             <tr>
                 <td>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>MATHURA</strong></td>
-                <td>
+                <td style="width: 353px">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>VRINDAVAN</strong></td>
             </tr>
             <tr>
-                <td style="text-decoration: underline">
-                    <span>
-        <strong>
-        <asp:LinkButton ID="LinkButton1" runat="server" 
-            style="font-size: x-small; " onclick="LinkButton1_Click">Shree Krishna Janambhoomi temple</asp:LinkButton>
-        </strong>
-                </td>
                 <td>
-                    <asp:LinkButton ID="LinkButton8" runat="server" style="font-size: x-small">Govind Dev temple</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton4" runat="server" onclick="LinkButton4_Click">Shri Krishna Janmabhoomi Temple</asp:LinkButton>
+                </td>
+                <td style="width: 353px">
+                    <asp:LinkButton ID="LinkButton10" runat="server" onclick="LinkButton10_Click">Shri Garud Govind Ji Temple</asp:LinkButton>
                 </td>
             </tr>
             <tr>
-                <td style="text-decoration: underline">
-                    <span>
-        <strong>
-        <asp:LinkButton ID="LinkButton2" runat="server" 
-            style="font-size: x-small; " onclick="LinkButton2_Click">Dwarkadish Temple</asp:LinkButton>
-        </strong>
-                </td>
                 <td>
-                    <asp:LinkButton ID="LinkButton9" runat="server" style="font-size: x-small">Prem mandir</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton5" runat="server" onclick="LinkButton5_Click">Shri Dwarkadhish Temple</asp:LinkButton>
+                </td>
+                <td style="width: 353px">
+                    <asp:LinkButton ID="LinkButton11" runat="server" onclick="LinkButton11_Click">Prem Mandir</asp:LinkButton>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <asp:LinkButton ID="LinkButton7" runat="server" onclick="LinkButton7_Click">Keshav Dev Temple </asp:LinkButton>
+                </td>
+                <td style="width: 353px">
+                    <asp:LinkButton ID="LinkButton13" runat="server" onclick="LinkButton13_Click"> Shri Banke Bihari Temple</asp:LinkButton>
                 </td>
             </tr>
             <tr>
-                <td style="text-decoration: underline">
-                    <span>
-        <strong>
-        <asp:LinkButton ID="LinkButton3" runat="server" 
-            style="font-size: x-small; " onclick="LinkButton3_Click">Gita Mandir</asp:LinkButton>
-        </strong>
-                </td>
                 <td>
-                    <asp:LinkButton ID="LinkButton10" runat="server" style="font-size: x-small">Uma Shakti Peet</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton8" runat="server" onclick="LinkButton8_Click">Shri Bhuteshwar Mahadev Temple	</asp:LinkButton>
+                </td>
+                <td style="width: 353px">
+                    <asp:LinkButton ID="LinkButton14" runat="server" onclick="LinkButton14_Click">Shri Radha Madan Mohan Ji Temple, </asp:LinkButton>
                 </td>
             </tr>
             <tr>
-                <td style="text-decoration: underline">
-                    <span>
-        <strong>
-        <asp:LinkButton ID="LinkButton4" runat="server" 
-            style="font-size: x-small; ">Jugal Kishore Mandir</asp:LinkButton>
-        </strong>
-                </td>
                 <td>
-                    <asp:LinkButton ID="LinkButton11" runat="server" style="font-size: x-small">Banke Bihari Temple</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton9" runat="server" onclick="LinkButton9_Click">Chamunda Devi Mandir</asp:LinkButton>
                 </td>
-            </tr>
-            <tr>
-                <td style="text-decoration: underline">
-                    <span>
-        <strong>
-        <asp:LinkButton ID="LinkButton5" runat="server" 
-            style="font-size: x-small; ">Kesava Deo Temple</asp:LinkButton>
-        </strong>
-                </td>
-                <td>
-                    <asp:LinkButton ID="LinkButton12" runat="server" style="font-size: x-small">Madan Mohan temple </asp:LinkButton>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-decoration: underline">
-                    <span>
-        <strong>
-        <asp:LinkButton ID="LinkButton6" runat="server" 
-            style="font-size: x-small; ">Bhuteshwar Temple</asp:LinkButton>
-        </strong>
-                </td>
-                <td>
-                    <asp:LinkButton ID="LinkButton13" runat="server" style="font-size: x-small">Nidhivan temple</asp:LinkButton>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-decoration: underline">
-                    <span>
-        <strong>
-        <asp:LinkButton ID="LinkButton7" runat="server" 
-            style="font-size: x-small; ">Chamunda devi Temple</asp:LinkButton>
-        </strong>
-                </td>
-                <td>
-                    <asp:LinkButton ID="LinkButton14" runat="server" style="font-size: x-small">ISCKON temple</asp:LinkButton>
+                <td style="width: 353px">
+                    <asp:LinkButton ID="LinkButton15" runat="server" onclick="LinkButton15_Click">Nidhivan Temple</asp:LinkButton>
                 </td>
             </tr>
             <tr>
                 <td>
                     &nbsp;</td>
-                <td>
-                    <asp:LinkButton ID="LinkButton15" runat="server" style="font-size: x-small">Gokul Nanda</asp:LinkButton>
+                <td style="width: 353px">
+                    <asp:LinkButton ID="LinkButton16" runat="server" onclick="LinkButton16_Click">ISCKON Temple</asp:LinkButton>
                 </td>
             </tr>
-        </table>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td style="width: 353px">
+                    <asp:LinkButton ID="LinkButton17" runat="server" onclick="LinkButton17_Click">Shri Radha Gokulananda Ji Temple</asp:LinkButton>
+                </td>
+            </tr>
+                  <tr>
+                <td>
+                    
+                </td>
+                <td style="width: 353px">
+                    <asp:LinkButton ID="LinkButton6" runat="server" onclick="LinkButton6_Click">Geeta Mandir</asp:LinkButton>
+                </td>
+            </tr>             
+                  <tr>
+                <td>
+                    
+                    &nbsp;</td>
+                <td style="width: 353px">
+                    <asp:LinkButton ID="LinkButton18" runat="server" onclick="LinkButton18_Click">Shri JugalKishore Ji Temple</asp:LinkButton>
+                </td>
+            </tr>             
+         </table>
     </p>
 </asp:Content>
 
