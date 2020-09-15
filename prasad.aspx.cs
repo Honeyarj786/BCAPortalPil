@@ -45,14 +45,14 @@ public partial class prasad : System.Web.UI.Page
         cmd.ExecuteNonQuery();
         conn.Close();
         tb22.Text=" ";
+        Response.Redirect("payment.aspx");
 
-
-
+        
     
     
     }
     protected void LinkButton1_Click(object sender, EventArgs e)
     {
-
+        
     }
 }

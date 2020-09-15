@@ -27,7 +27,9 @@ public partial class Donation : System.Web.UI.Page
         conn.Close();
         tb23.Text = " ";
         DropDownList1.Text = " ";
-        Response.Write("data saved");
+       
+        
+        Response.Redirect("payment.aspx");
 
 
     }

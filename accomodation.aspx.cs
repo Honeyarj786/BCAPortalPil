@@ -55,7 +55,7 @@ public partial class accomodation : System.Web.UI.Page
         Response.Write("data saved");
 
 
-        //Response.Redirect("book.aspx");
+        Response.Redirect("payment.aspx");
     }
     protected void Mathurachkbox_CheckedChanged(object sender, EventArgs e)
     {
