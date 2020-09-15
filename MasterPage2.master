@@ -81,8 +81,8 @@
           <li><a href="login.aspx"><span>online sevices</span></a></li>
           <li><a href="timing.aspx"><span>timing</span></a></li>
           <li><a href="contact.html"><span>festivals</span></a></li>
-          <li><a href="contact.html"><span>map</span></a></li>
-        </ul>
+<%--          <li><a href="contact.html"><span>map</span></a></li>
+--%>        </ul>
       </div>
       <div class="clr"></div>
    <%--   <div class="slider">

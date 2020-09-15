@@ -31,7 +31,7 @@ public partial class accomodation : System.Web.UI.Page
         SqlConnection conn = new SqlConnection();
         conn.ConnectionString = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
         conn.Open();
-        String str = "insert into Accomodation values(@IsMathuraSelected,@IsVrindavanSelected,@MathuraDate,@VrindavanDate,@MathuraHotel,@VrindavanHotel, @Total,@userid,@Mathuradateto,@Vrindavanto)";
+        String str = "insert into Accomodation values(@IsMathuraSelected,@IsVrindavanSelected,@MathuraDate,@VrindavanDate,@MathuraHotel,@VrindavanHotel, @Total,@userid,@Mathuradateto,@Vrindavanto,@Nooftravellers,@Guideneeded)";
         SqlCommand cm = new SqlCommand(str, conn);
         cm.Parameters.AddWithValue("@IsMathuraSelected", Mathurachkbox.Checked);
         cm.Parameters.AddWithValue("@IsVrindavanSelected", Vrindavanchkbox.Checked);
@@ -43,7 +43,8 @@ public partial class accomodation : System.Web.UI.Page
         cm.Parameters.AddWithValue("@VrindavanHotel", Vrindd.Text);
         cm.Parameters.AddWithValue("@Total", totalAccomodation.Text);
         cm.Parameters.AddWithValue("@userid", int.Parse (Session["Userid"].ToString()));
-        
+        cm.Parameters.AddWithValue("@Nooftravellers", nooftravellers.Text);
+        cm.Parameters.AddWithValue("@Guideneeded", guideneeded.Text);
         
 
 
