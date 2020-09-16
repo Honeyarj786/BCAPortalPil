@@ -81,7 +81,7 @@
 
     <td>
     <asp:Button ID="PayButton" runat="server" BackColor="#3333CC" 
-                BorderColor="#3333CC" ForeColor="White" Text="Pay" 
+                BorderColor="#3333CC" ForeColor="White" Text="Pay" onclick="PayButton_Click1" 
                  />
     </td>
     </tr>
@@ -89,9 +89,9 @@
 </table>
 
     </asp:Panel>
-    <asp:Panel ID="Nb" runat="server">
+    <%--<asp:Panel ID="Nb" runat="server">
     
-        <asp:DropDownList ID="netbanklist" runat="server">
+        <%--<asp:DropDownList ID="netbanklist" runat="server">
          <asp:ListItem>HDFC Bank</asp:ListItem>
          <asp:ListItem>State Bank of India</asp:ListItem>
          <asp:ListItem>ICICI Bank</asp:ListItem>
@@ -100,13 +100,13 @@
          <asp:ListItem>Yes Bank</asp:ListItem>
          <asp:ListItem>Punjab National Bank</asp:ListItem>
          <asp:ListItem>Bank Of Baroda</asp:ListItem>
-                 </asp:DropDownList>
+                 </asp:DropDownList>--%>
 
                  <br />
-                 <asp:Button ID="Button1" runat="server" BackColor="#3333CC" 
+                 <%--<asp:Button ID="Button1" runat="server" BackColor="#3333CC" 
                 BorderColor="#3333CC" ForeColor="White" Text="Proceed To Pay" 
-                 />
-    </asp:Panel><asp:Panel ID="upi" runat="server">
+                 />--%>
+    </asp:Panel--%>><asp:Panel ID="upi" runat="server">
     <table>
     <tr>
     <td style="width: 166px">
