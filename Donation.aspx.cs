@@ -25,11 +25,9 @@ public partial class Donation : System.Web.UI.Page
         cmd.Parameters.AddWithValue("@amount", tb23.Text);
         cmd.ExecuteNonQuery();
         conn.Close();
-        tb23.Text = " ";
-        DropDownList1.Text = " ";
        
-        
-        Response.Redirect("payment.aspx");
+
+        Response.Redirect("payment.aspx?source=Donation&amount=" + tb23.Text);  
 
 
     }

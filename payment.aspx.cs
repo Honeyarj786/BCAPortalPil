@@ -21,9 +21,11 @@ public partial class payment : System.Web.UI.Page
             OTP.Visible = false;
             upipay.Visible = false;
             otplabel.Visible = false;
-            
-        
-        
+            if (Request.QueryString["source"] != null && Request.QueryString["source"] != string.Empty)
+                PaymentMessage.Text = "Total pending payment for your " + Request.QueryString["source"] + " is Rs ";
+
+            if (Request.QueryString["amount"] != null && Request.QueryString["amount"] != string.Empty)
+                PaymentMessage.Text +=  Request.QueryString["amount"] + " .";
         
         }
         
