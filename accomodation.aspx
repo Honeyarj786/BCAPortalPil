@@ -109,9 +109,17 @@
         <td style="height: 30px">      
 
 
-            <asp:DropDownList ID="Vrindd" runat="server" ><asp:ListItem Selected="True"></asp:ListItem>
-                <asp:ListItem>Hotel1</asp:ListItem>
-                <asp:ListItem>Hotel2</asp:ListItem>
+            <asp:DropDownList ID="Vrindd" runat="server" ><asp:ListItem Selected="True">Vrinda Resort</asp:ListItem>
+                <asp:ListItem>The Radha Ashok</asp:ListItem>
+                <asp:ListItem>Brijwasi Land Inn</asp:ListItem>
+                <asp:ListItem>The Mansion</asp:ListItem>
+                <asp:ListItem>Hotel Panache</asp:ListItem>
+                <asp:ListItem>Kridha Residency</asp:ListItem>
+                <asp:ListItem>Hotel Wingston Mathura</asp:ListItem>
+                <asp:ListItem>Brijwasi Royal</asp:ListItem>
+                <asp:ListItem>Hotel Silver Star</asp:ListItem>
+                <asp:ListItem>Hotel ganpati Palace</asp:ListItem>
+                <asp:ListItem>Madhav Muskan Residency</asp:ListItem>
             </asp:DropDownList>
 
 

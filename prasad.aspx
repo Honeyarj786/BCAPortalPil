@@ -15,7 +15,8 @@
         the temples in vrindavan from the comforts of your home!</span></em></strong></p>
     <p class="style3" style="text-decoration: underline; font-size: x-small">
         <asp:CheckBoxList ID="CheckBoxList1" runat="server" AutoPostBack="True" 
-            style="font-size: small">
+            style="font-size: small" 
+            onselectedindexchanged="CheckBoxList1_SelectedIndexChanged">
             <asp:ListItem>CHAPPAN BHOG PRASAD</asp:ListItem>
             <asp:ListItem>DRY FRUIT PRASAD</asp:ListItem>
             <asp:ListItem>MATHURA PEDA PRASAD</asp:ListItem>
@@ -24,7 +25,7 @@
         </asp:CheckBoxList>
 &nbsp; </p>
     <p class="style3" style="font-size: x-small">
-        <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click">TOTAL CHARGES</asp:LinkButton>
+        <asp:LinkButton ID="TotalCharges" runat="server" onclick="TotalCharges_Click">TOTAL CHARGES</asp:LinkButton>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="tb22" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>

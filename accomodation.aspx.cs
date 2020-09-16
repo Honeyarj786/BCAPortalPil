@@ -31,19 +31,20 @@ public partial class accomodation : System.Web.UI.Page
         SqlConnection conn = new SqlConnection();
         conn.ConnectionString = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
         conn.Open();
-        String str = "insert into Accomodation values(@IsMathuraSelected,@IsVrindavanSelected,@MathuraDate,@VrindavanDate,@MathuraHotel,@VrindavanHotel, @Total,@userid,@Mathuradateto,@Vrindavanto)";
+        String str = "insert into Accomodation values(@IsMathuraSelected,@IsVrindavanSelected,@MathuraDate,@VrindavanDate,@MathuraHotel,@VrindavanHotel, @Total,@userid,@Mathuradateto,@Vrindavanto,@Nooftravellers,@Guideneeded)";
         SqlCommand cm = new SqlCommand(str, conn);
         cm.Parameters.AddWithValue("@IsMathuraSelected", Mathurachkbox.Checked);
         cm.Parameters.AddWithValue("@IsVrindavanSelected", Vrindavanchkbox.Checked);
         cm.Parameters.AddWithValue("@MathuraDate", Mathuradate.Text);
         cm.Parameters.AddWithValue("@VrindavanDate", Vrindavandate.Text);
-        cm.Parameters.AddWithValue("@VrindavanDate", Vrindavandateto.Text);
+        cm.Parameters.AddWithValue("@Vrindavanto", Vrindavandateto.Text);
         cm.Parameters.AddWithValue("@MathuraHotel", MathuraHoteldd.Text);
-        cm.Parameters.AddWithValue("@MathuraDate", Mathuradateto.Text);
+        cm.Parameters.AddWithValue("@Mathuradateto", Mathuradateto.Text);
         cm.Parameters.AddWithValue("@VrindavanHotel", Vrindd.Text);
-        cm.Parameters.AddWithValue("@Total", DBNull.Value);
-        cm.Parameters.AddWithValue("@userid", DBNull.Value );
-        
+        cm.Parameters.AddWithValue("@Total", totalAccomodation.Text);
+        cm.Parameters.AddWithValue("@userid", int.Parse (Session["Userid"].ToString()));
+        cm.Parameters.AddWithValue("@Nooftravellers", nooftravellers.Text);
+        cm.Parameters.AddWithValue("@Guideneeded", guideneeded.Text);
         
 
 
@@ -54,7 +55,9 @@ public partial class accomodation : System.Web.UI.Page
         Response.Write("data saved");
 
 
-        //Response.Redirect("book.aspx");
+      
+
+        Response.Redirect("payment.aspx?source=Accomodation&amount=" + totalAccomodation.Text); 
     }
     protected void Mathurachkbox_CheckedChanged(object sender, EventArgs e)
     {
@@ -107,16 +110,17 @@ public partial class accomodation : System.Web.UI.Page
     {
 
         CultureInfo provider = CultureInfo.InvariantCulture;
-        // It throws Argument null exception  
-        DateTime mathuradateto = DateTime.ParseExact(Mathuradateto.Text, "M/d/yyyy", provider); 
-        DateTime vrindaDateto = DateTime.ParseExact(Vrindavandateto.Text, "M/d/yyyy", provider); 
-        DateTime mathuradatefrom = DateTime.ParseExact(Mathuradate.Text, "M/d/yyyy", provider); 
-        DateTime  vrindadatefrom= DateTime.ParseExact(Vrindavandate.Text, "M/d/yyyy", provider);
+        
+        DateTime mathuradateto =  string.IsNullOrWhiteSpace(Mathuradateto.Text) ? new DateTime(): DateTime.ParseExact(Mathuradateto.Text, "M/d/yyyy", provider);
+        DateTime vrindaDateto = string.IsNullOrWhiteSpace(Vrindavandateto.Text) ? new DateTime() : DateTime.ParseExact(Vrindavandateto.Text, "M/d/yyyy", provider);
+        DateTime mathuradatefrom = string.IsNullOrWhiteSpace(Mathuradate.Text) ? new DateTime() : DateTime.ParseExact(Mathuradate.Text, "M/d/yyyy", provider); 
+        DateTime  vrindadatefrom=  string.IsNullOrWhiteSpace(Vrindavandate.Text) ? new DateTime(): DateTime.ParseExact(Vrindavandate.Text, "M/d/yyyy", provider);
         int noofDaysinMathura = (mathuradateto.Subtract(mathuradatefrom)).Days;
         int noofDaysinVrindha = (vrindaDateto.Subtract(vrindadatefrom)).Days;
         int pricePerday = 500;
 
         int MathuraTotal = noofDaysinMathura * int.Parse(string.IsNullOrWhiteSpace(noOfroomsMathura.Text)?"0":noOfroomsMathura.Text) * pricePerday;
+
 
         int VrindaTotal = noofDaysinVrindha * int.Parse(string.IsNullOrWhiteSpace(NoofroomsVrindha.Text) ? "0" : NoofroomsVrindha.Text) * pricePerday;
 

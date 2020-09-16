@@ -18,7 +18,8 @@
         console.log("ready!");
     });
     $(document).ready(function () {
-        $('body').css({ 'background': '#fff url(../pil/images/main_bg_small.gif) repeat-x left 115px' });
+        $('body').css({ 'background': 'url(../pil/images/white.jpg) no-repeat' });
+        $('body').css({ 'background-size': 'cover' });
         console.log('printing');
     });
 
@@ -81,8 +82,8 @@
           <li><a href="login.aspx"><span>online sevices</span></a></li>
           <li><a href="timing.aspx"><span>timing</span></a></li>
           <li><a href="contact.html"><span>festivals</span></a></li>
-          <li><a href="contact.html"><span>map</span></a></li>
-        </ul>
+<%--          <li><a href="contact.html"><span>map</span></a></li>
+--%>        </ul>
       </div>
       <div class="clr"></div>
    <%--   <div class="slider">

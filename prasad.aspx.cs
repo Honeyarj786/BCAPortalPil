@@ -10,49 +10,86 @@ using System.Data.SqlClient;
 
 public partial class prasad : System.Web.UI.Page
 {
-    SqlConnection conn = new SqlConnection( );
+    
     protected void Page_Load(object sender, EventArgs e)
     {
-        conn.ConnectionString = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
-        conn.Open();
-
+        
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        String str = "insert into prasad values(@prasad,@total)";
+        SqlConnection conn = new SqlConnection();
+        conn.ConnectionString = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
+        conn.Open();
+        String str = "insert into prasad values(@prasd,@total)";
         SqlCommand cmd = new SqlCommand(str,conn);
+        string selectedPrasads = string.Empty;
         if (CheckBoxList1.Items[0].Selected)
         {
-            cmd.Parameters.AddWithValue("@prasad", "chappan bhog prasad");
+
+            selectedPrasads = selectedPrasads + "chappan bhog,";
         }
         if (CheckBoxList1.Items[1].Selected)
         {
-            cmd.Parameters.AddWithValue("@prasad", "dry fruit prasad");
+            selectedPrasads = selectedPrasads + "dry fruit,";
         }
         if (CheckBoxList1.Items[2].Selected)
         {
-            cmd.Parameters.AddWithValue("@prasad", "mathura peda prasad");
+            selectedPrasads = selectedPrasads + "mathura peda,";
         }
         if (CheckBoxList1.Items[3].Selected)
         {
-            cmd.Parameters.AddWithValue("@prasad", "pista peda prasad");
+            selectedPrasads = selectedPrasads + "pista peda,";
         }
         if (CheckBoxList1.Items[4].Selected)
         {
-            cmd.Parameters.AddWithValue("@prasad", "son papdi prasad");
+            selectedPrasads = selectedPrasads + "son papdi,";
         }
+        cmd.Parameters.AddWithValue("@prasd", selectedPrasads);
         cmd.Parameters.AddWithValue("@total",tb22.Text);
         cmd.ExecuteNonQuery();
         conn.Close();
-        tb22.Text=" ";
-
-
-
-    
+        Response.Redirect("payment.aspx?source=Prasad&amount=" + tb22.Text);   
     
     }
-    protected void LinkButton1_Click(object sender, EventArgs e)
+    protected void TotalCharges_Click(object sender, EventArgs e)
     {
+        int total = calculateTotal();
+        tb22.Text = total.ToString();
 
+
+    }
+
+    private int calculateTotal()
+    {
+        int chappan = 1000, dry = 500, mathurapeda = 800, pistapeda = 700, sonpapdi = 600;
+        int total = 0;
+        if (CheckBoxList1.Items[0].Selected)
+        {
+            total = total + chappan;
+        }
+        if (CheckBoxList1.Items[1].Selected)
+        {
+            total = total + dry;
+        }
+        if (CheckBoxList1.Items[2].Selected)
+        {
+            total = total + mathurapeda;
+        }
+        if (CheckBoxList1.Items[3].Selected)
+        {
+            total = total + pistapeda;
+        }
+        if (CheckBoxList1.Items[4].Selected)
+        {
+            total = total + sonpapdi;
+        }
+        return total;
+
+    }
+
+    protected void CheckBoxList1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        int total = calculateTotal();
+        tb22.Text = total.ToString();
     }
 }
