@@ -8,7 +8,7 @@
     });
     </script>
     <p style="font-size: large; color: #000066; text-decoration: underline; font-family: 'Comic Sans MS'">
-        <strong>SPECIAL ENTRY DASHAN</strong></p>
+        <strong>SPECIAL ENTRY DARSHAN</strong></p>
     <p>
         <strong><span style="font-size: small; color: #000066">SELECT TEMPLE</span><span style="font-size: small; color: #FFFFFF">&nbsp;
         </span></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

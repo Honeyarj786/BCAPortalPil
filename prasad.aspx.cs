@@ -20,7 +20,7 @@ public partial class prasad : System.Web.UI.Page
         SqlConnection conn = new SqlConnection();
         conn.ConnectionString = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
         conn.Open();
-        String str = "insert into prasad values(@prasd,@total)";
+        String str = "insert into prasad (prasd,total, userid)values(@prasd,@total,@userid);SELECT SCOPE_IDENTITY();";
         SqlCommand cmd = new SqlCommand(str,conn);
         string selectedPrasads = string.Empty;
         if (CheckBoxList1.Items[0].Selected)
@@ -45,10 +45,11 @@ public partial class prasad : System.Web.UI.Page
             selectedPrasads = selectedPrasads + "son papdi,";
         }
         cmd.Parameters.AddWithValue("@prasd", selectedPrasads);
-        cmd.Parameters.AddWithValue("@total",tb22.Text);
-        cmd.ExecuteNonQuery();
+        cmd.Parameters.AddWithValue("@total", tb22.Text);
+        cmd.Parameters.AddWithValue("@userid", int.Parse(Session["Userid"] == null ? "0" : Session["Userid"].ToString()));
+        int prasadid = Convert.ToInt32(cmd.ExecuteScalar());
         conn.Close();
-        Response.Redirect("payment.aspx?source=Prasad&amount=" + tb22.Text);   
+        Response.Redirect("payment.aspx?source=Prasad&amount=" + tb22.Text + "&refid=" + prasadid);   
     
     }
     protected void TotalCharges_Click(object sender, EventArgs e)

@@ -19,15 +19,16 @@ public partial class Donation : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        String str = "insert into donation values(@temple,@amount)";
+        String str = "insert into donation(temple,amount,userid) values(@temple,@amount,@userid);SELECT SCOPE_IDENTITY()";
         SqlCommand cmd = new SqlCommand(str, conn);
         cmd.Parameters.AddWithValue("@temple", DropDownList1.Text);
         cmd.Parameters.AddWithValue("@amount", tb23.Text);
-        cmd.ExecuteNonQuery();
+        cmd.Parameters.AddWithValue("@userid", int.Parse(Session["Userid"] == null ? "0" : Session["Userid"].ToString()));
+        int donationid = Convert.ToInt32(cmd.ExecuteScalar());
         conn.Close();
        
 
-        Response.Redirect("payment.aspx?source=Donation&amount=" + tb23.Text);  
+        Response.Redirect("payment.aspx?source=Donation&amount=" + tb23.Text+"&refid="+donationid);  
 
 
     }

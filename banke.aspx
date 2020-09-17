@@ -18,15 +18,20 @@
                 <b>NO OF PERSONS</b></td>
             <td>
                 <asp:TextBox ID="tb16" runat="server" 
-                    style="font-size: small; font-weight: bold; " CssClass="style3"></asp:TextBox>
+                    style="font-size: small; font-weight: bold; " CssClass="style3" 
+                    AutoPostBack="True" ontextchanged="tb16_TextChanged"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td style="font-size: small; color: #000066">
                 <b>TIMING</b></td>
             <td>
-                <asp:TextBox ID="tb17" runat="server" 
-                    style="font-size: small; font-weight: bold; " CssClass="style3"></asp:TextBox>
+                <asp:RadioButtonList ID="TimingList" runat="server" 
+                    
+                    RepeatDirection="Horizontal">
+                    <asp:ListItem>Morning</asp:ListItem>
+                    <asp:ListItem>Evevning</asp:ListItem>
+                </asp:RadioButtonList>
             </td>
         </tr>
         <tr>
@@ -44,7 +49,24 @@
                 <span class="style3">
                 </b>
                 </span>
-                <asp:TextBox ID="tb18" runat="server" CssClass="style3"></asp:TextBox>
+                <asp:RadioButtonList ID="PedaList" runat="server" 
+                   
+                    RepeatDirection="Horizontal" AutoPostBack="True" 
+                    onselectedindexchanged="PedaList_SelectedIndexChanged">
+                    <asp:ListItem>Yes</asp:ListItem>
+                    <asp:ListItem>No</asp:ListItem>
+                </asp:RadioButtonList>
+            </td>
+        </tr>
+        <tr style="font-size: medium">
+            <td style="font-size: small; color: #000066">
+            <span class="style3">
+            
+            </span>
+                <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click">Click Here To Calculate</asp:LinkButton>
+            </td>
+            <td style="font-size: small">
+                <asp:TextBox ID="Total" runat="server"  ></asp:TextBox>
             </td>
         </tr>
         <tr>

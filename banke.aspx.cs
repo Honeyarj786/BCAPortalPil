@@ -18,15 +18,65 @@ public partial class banke : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        String str = "insert into banke values(@person,@timing,@peda)";
-        SqlCommand cmd = new SqlCommand(str,conn);
+        String str = "insert into banke(person,timing,peda,userid) values(@person,@timing,@peda,@userid);SELECT SCOPE_IDENTITY();";
+        SqlCommand cmd = new SqlCommand(str, conn);
+
+        string selectedPrasads = string.Empty;
+        if (PedaList.Items[0].Selected)
+        {
+
+            selectedPrasads = selectedPrasads + "Yes";
+        }
+        if (PedaList.Items[1].Selected)
+        {
+            selectedPrasads = selectedPrasads + "No,";
+        }
+
         cmd.Parameters.AddWithValue("@person", tb16.Text);
-        cmd.Parameters.AddWithValue("@timing", tb17.Text);
-        cmd.Parameters.AddWithValue("@peda", tb18.Text);
-        cmd.ExecuteNonQuery();
-        tb16.Text = " ";
-        tb17.Text = " ";
-        tb18.Text = " ";
-        Response.Write("data saved");
+        cmd.Parameters.AddWithValue("@timing", TimingList.Text);
+        cmd.Parameters.AddWithValue("@peda", PedaList.Text);
+        cmd.Parameters.AddWithValue("@userid", int.Parse(Session["Userid"] == null ? "0" : Session["Userid"].ToString()));
+        int bankeid = Convert.ToInt32(cmd.ExecuteScalar());
+        conn.Close();
+
+        Response.Redirect("payment.aspx?source=SE&amount=" + Total.Text + "&refid=" + bankeid);   
+    
+    }
+
+
+    protected void LinkButton1_Click(object sender, EventArgs e)
+    {
+        int pricePerperson = 100;
+        int perons = int.Parse(tb16.Text);
+        int pedacharge = (PedaList.Text == "Yes" ? 1 : 0) * 500;
+
+        int TravTotal = (perons * pricePerperson) + pedacharge;
+        Total.Text = TravTotal.ToString();
+
+
+    }
+
+    protected void PedaList_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        int pricePerperson = 100;
+        int perons = int.Parse(tb16.Text);
+        int pedacharge = (PedaList.Text == "Yes" ? 1 : 0) * 500;
+
+        int TravTotal = (perons * pricePerperson) + pedacharge;
+        Total.Text = TravTotal.ToString();
+
+    }
+    protected void tb16_TextChanged(object sender, EventArgs e)
+    {
+        int pricePerperson = 100;
+        int perons = int.Parse(tb16.Text);
+        int pedacharge = (PedaList.Text == "Yes" ? 1 : 0) * 500;
+
+        int TravTotal = (perons * pricePerperson) + pedacharge;
+        Total.Text = TravTotal.ToString();
+
     }
 }
+
+   
+   

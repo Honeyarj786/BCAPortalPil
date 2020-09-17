@@ -68,51 +68,86 @@ public partial class payment : System.Web.UI.Page
         SqlConnection conn = new SqlConnection();
         conn.ConnectionString = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
         conn.Open();
-        String str = " insert into pay2 values(@upid,@otp)";
+        String str = " insert into payment (UPIId,OTP,paymentType) values(@upid,@otp,@paymenttype); SELECT SCOPE_IDENTITY();";
         SqlCommand cm = new SqlCommand(str, conn);
         cm.Parameters.AddWithValue("@upid", upiid.Text);
         cm.Parameters.AddWithValue("@otp", OTP.Text);
-        cm.ExecuteNonQuery();
+        cm.Parameters.AddWithValue("@paymenttype","UPI");
+
+        int paymentid= Convert.ToInt32 (cm.ExecuteScalar());
+
+        string refid = Request.QueryString["refid"];
+        if (refid != null && refid != string.Empty)
+
+        {
+            var source = Request.QueryString["source"];
+            if (source != null && source != string.Empty && source == "Prasad")
+            {
+                str= "update prasad set paymentid="+ paymentid.ToString()+ " where id="+ refid;
+
+            }
+            else if (source != null && source != string.Empty && source == "Accomodation")
+            {
+                str = "update accomodation set paymentid=" + paymentid.ToString() + " where id=" + refid;
+            }
+            else  if( source != null && source != string.Empty && source == "Donation"){
+                str = "update donation set paymentid=" + paymentid.ToString() + " where id=" + refid;
+            }
+            else if (source != null && source != string.Empty && source == "SE")
+            {
+                str = "update banke set paymentid=" + paymentid.ToString() + " where id=" + refid;
+            }
+            SqlCommand cm2 = new SqlCommand(str, conn);
+            cm2.ExecuteNonQuery();
+        }
         conn.Close();
+
         Response.Write("data Saved");
         string strMsg = "Payment Sucessfull";
         string script = "<script language=\"javascript\" type=\"text/javascript\">alert('" + strMsg + "');</script>";
         Response.Write(script);
 
     }
-    //protected void PayButton_Click(object sender, EventArgs e)
-    //{
-    //    SqlConnection conn = new SqlConnection();
-    //    conn.ConnectionString = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
-    //    conn.Open();
-    //    string str = " insert into payment values(@namoncard,@cardno,@expmon,@expyear,@cvv)";
-    //    SqlCommand cmd = new SqlCommand(str, conn);
-    //    cmd.Parameters.AddWithValue("@namoncard", Carnam.Text);
-    //    cmd.Parameters.AddWithValue("@cardno", Carnum.Text);
-    //    cmd.Parameters.AddWithValue("@expmon", Exmon.Text);
-    //    cmd.Parameters.AddWithValue("@expyear", Exyear.Text);
-    //    cmd.Parameters.AddWithValue("@cvv", cvv.Text);
-    //    cmd.ExecuteNonQuery();
-    //    conn.Close();
-    //    Response.Write("data Saved");
-    //    string strMsg = "Payment Sucessfull";
-    //    string script = "<script language=\"javascript\" type=\"text/javascript\">alert('" + strMsg + "');</script>";
-    //    Response.Write(script);
-    //}
 
     protected void PayButton_Click1(object sender, EventArgs e)
     {
         SqlConnection conn = new SqlConnection();
         conn.ConnectionString = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
         conn.Open();
-        String str = " insert into payment values(@namoncard,@cardno,@expmon,@expyear,@cvv)";
+        String str = " insert into payment (namoncard,cardno,expmon,expyear,cvv,paymenttype) values(@namoncard,@cardno,@expmon,@expyear,@cvv,@paymenttype); SELECT SCOPE_IDENTITY();";
         SqlCommand cm = new SqlCommand(str, conn);
         cm.Parameters.AddWithValue("@namoncard", Carnam.Text);
         cm.Parameters.AddWithValue("@cardno", Carnum.Text);
         cm.Parameters.AddWithValue("@expmon", Exmon.Text);
         cm.Parameters.AddWithValue("@expyear", Exyear.Text);
         cm.Parameters.AddWithValue("@cvv", cvv.Text);
-        cm.ExecuteNonQuery();
+        cm.Parameters.AddWithValue("@paymenttype", "credit/debit card");
+        int paymentid = Convert.ToInt32(cm.ExecuteScalar());
+
+        string refid = Request.QueryString["refid"];
+        if (refid != null && refid != string.Empty)
+        {
+            var source = Request.QueryString["source"];
+            if (source != null && source != string.Empty && source == "Prasad")
+            {
+                str = "update prasad set paymentid=" + paymentid.ToString() + " where id=" + refid;
+
+            }
+            else if (source != null && source != string.Empty && source == "Accomodation")
+            {
+                str = "update accomodation set paymentid=" + paymentid.ToString() + " where id=" + refid;
+            }
+            else if (source != null && source != string.Empty && source == "Donation")
+            {
+                str = "update donation set paymentid=" + paymentid.ToString() + " where id=" + refid;
+            }
+            else if (source != null && source != string.Empty && source == "SE")
+            {
+                str = "update banke set paymentid=" + paymentid.ToString() + " where id=" + refid;
+            }
+            SqlCommand cm2 = new SqlCommand(str, conn);
+            cm2.ExecuteNonQuery();
+        }
         conn.Close();
         Response.Write("data Saved");
         string strMsg = "Payment Sucessfull";

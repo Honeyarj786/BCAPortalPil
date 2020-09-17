@@ -31,7 +31,7 @@ public partial class accomodation : System.Web.UI.Page
         SqlConnection conn = new SqlConnection();
         conn.ConnectionString = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
         conn.Open();
-        String str = "insert into Accomodation values(@IsMathuraSelected,@IsVrindavanSelected,@MathuraDate,@VrindavanDate,@MathuraHotel,@VrindavanHotel, @Total,@userid,@Mathuradateto,@Vrindavanto,@Nooftravellers,@Guideneeded)";
+        String str = "insert into Accomodation (IsMathuraSelected,IsVrindavanSelected,MathuraDate,VrindavanDate,MathuraHotel,VrindavanHotel, Total,userid,Mathuradateto,Vrindavandateto,Nooftravellers,Guideneeded)values(@IsMathuraSelected,@IsVrindavanSelected,@MathuraDate,@VrindavanDate,@MathuraHotel,@VrindavanHotel, @Total,@userid,@Mathuradateto,@Vrindavanto,@Nooftravellers,@Guideneeded);SELECT SCOPE_IDENTITY();";
         SqlCommand cm = new SqlCommand(str, conn);
         cm.Parameters.AddWithValue("@IsMathuraSelected", Mathurachkbox.Checked);
         cm.Parameters.AddWithValue("@IsVrindavanSelected", Vrindavanchkbox.Checked);
@@ -42,22 +42,20 @@ public partial class accomodation : System.Web.UI.Page
         cm.Parameters.AddWithValue("@Mathuradateto", Mathuradateto.Text);
         cm.Parameters.AddWithValue("@VrindavanHotel", Vrindd.Text);
         cm.Parameters.AddWithValue("@Total", totalAccomodation.Text);
-        cm.Parameters.AddWithValue("@userid", int.Parse (Session["Userid"].ToString()));
+        cm.Parameters.AddWithValue("@userid", int.Parse(Session["Userid"] == null ? "0" : Session["Userid"].ToString()));
         cm.Parameters.AddWithValue("@Nooftravellers", nooftravellers.Text);
         cm.Parameters.AddWithValue("@Guideneeded", guideneeded.Text);
         
 
-
-
-        cm.ExecuteNonQuery();
+          int accomoid = Convert.ToInt32(cm.ExecuteScalar());
         conn.Close();
         
         Response.Write("data saved");
 
 
-      
 
-        Response.Redirect("payment.aspx?source=Accomodation&amount=" + totalAccomodation.Text); 
+
+        Response.Redirect("payment.aspx?source=Accomodation&amount=" + totalAccomodation.Text + "&refid=" + accomoid); 
     }
     protected void Mathurachkbox_CheckedChanged(object sender, EventArgs e)
     {
