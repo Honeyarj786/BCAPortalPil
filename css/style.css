@@ -503,11 +503,14 @@ ol li .send {
 	float:left;
 }
 .footer_resize .rf {
-	float:
-
-
-
- {
+	float:right;
 	outline:none;
     font-size: x-small;
 }
+
+.justify-text
+{
+    
+    text-align: justify;
+    text-justify: inter-word;
+    }

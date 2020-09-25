@@ -149,6 +149,33 @@
             <li><a href="abouttemple.aspx" class="style3"><span class="">Vrindavan</span></a></li>
             <li><a href="Gov.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Garud Govind Ji Temple</span></a></li>
             <li><a href="Pre.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Prem Mandir</span></a></li>
+            <li><a href="jugm.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Jugal Kishore Ji Temple</span></a></li>
+            <li><a href="abban.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Banke Bihari Temple</span></a></li> 
+            <li><a href="Mad.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Radha Madan Mohan Ji Temple </span></a></li> 
+            <li><a href="Nid.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Nidhivan Temple</span></a></li>
+            <li><a href="Isk.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;ISCKON Temple</span></a></li>
+            <li><a href="Gok.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Radha Gokulananda Ji Temple </span></a></li>
+          </ul>
+        </div>
+     
+      </div>
+       <div id="festival" style="display:none;" class="sidebar">
+        <div class="clr"></div>
+        <div class="gadget">
+          <h2 class="star"><span class="style1"><span class="style2"><strong>Festivals</strong></span></span> </h2>
+          <div class="clr"></div>
+          <ul class="sb_menu">
+            <li><a href="abouttemple.aspx" class="style3"><span class="">Mathura</span></a></li>
+            <li><a href="ShKrishnaJb.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Krishna Janmabhoomi Temple</span></a></li>
+            <li><a href="ShDwarkadishtemp.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Dwarkadhish Temple</span></a></li>
+            <li><a href="Gitaman.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Geeta Mandir</span></a></li>
+            <li><a href="Kes.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Keshav Deo Temple</span></a></li>
+            <li><a href="Bhut.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Bhuteshwar Mahadev Temple</span></a></li>
+              
+             <li><a href="Cham.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Maa Chamunda Temple</span></a></li>
+            <li><a href="abouttemple.aspx" class="style3"><span class="">Vrindavan</span></a></li>
+            <li><a href="Gov.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Garud Govind Ji Temple</span></a></li>
+            <li><a href="Pre.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Prem Mandir</span></a></li>
             <li><a href="jug.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Jugal Kishore Ji Temple</span></a></li>
             <li><a href="abban.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Banke Bihari Temple</span></a></li> 
             <li><a href="Mad.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Radha Madan Mohan Ji Temple </span></a></li> 
@@ -159,6 +186,7 @@
         </div>
      
       </div>
+
       <div class="clr"></div>
     </div>
   </div>

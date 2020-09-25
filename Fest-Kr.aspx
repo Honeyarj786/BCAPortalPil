@@ -1,10 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="Kr.aspx.cs" Inherits="festival_Kr" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="Fest-Kr.aspx.cs" Inherits="festival_Kr" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <script>
     $(function () {
         $('#onlinesidebar').hide();
         $('#templesidebar').hide();
+        $('#festival').show();
     });
     </script>
     <p style="text-decoration: underline; font-size: x-large; color: #CC0066">
@@ -163,4 +164,3 @@
     <p>
         &nbsp;</p>
 </asp:Content>
-

@@ -17,62 +17,62 @@ public partial class abouttemple : System.Web.UI.Page
 
     protected void LinkButton4_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Temples/ShKrishnaJb.aspx");
+        Response.Redirect("ShKrishnaJb.aspx");
     }
     protected void LinkButton5_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Temples/ShDwarkadishtemp.aspx");
+        Response.Redirect("ShDwarkadishtemp.aspx");
     }
     protected void LinkButton6_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Temples/Gitaman.aspx");
+        Response.Redirect("Gitaman.aspx");
     }
     protected void LinkButton7_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Temples/Kes.aspx");
+        Response.Redirect("Kes.aspx");
     }
     protected void LinkButton8_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Temples/Bhut.aspx");
+        Response.Redirect("Bhut.aspx");
     }
     protected void LinkButton9_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Temples/Cham.aspx");
+        Response.Redirect("Cham.aspx");
     }
     protected void LinkButton10_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Temples/Gov.aspx");
+        Response.Redirect("Gov.aspx");
     }
     protected void LinkButton11_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Temples/Pre.aspx");
+        Response.Redirect("Pre.aspx");
     }
     protected void LinkButton12_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Temples/Jug.aspx");
+        Response.Redirect("Jugm.aspx");
     }
     protected void LinkButton13_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Temples/abban.aspx");
+        Response.Redirect("abban.aspx");
     }
     protected void LinkButton14_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Temples/Mad.aspx");
+        Response.Redirect("Mad.aspx");
     }
     protected void LinkButton15_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Temples/Nid.aspx");
+        Response.Redirect("Nid.aspx");
     }
     protected void LinkButton16_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Temples/Isk.aspx");
+        Response.Redirect("Isk.aspx");
     }
     protected void LinkButton17_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Temples/Gok.aspx");
+        Response.Redirect("Gok.aspx");
     }
     protected void LinkButton18_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Temples/Jugm.aspx");
+        Response.Redirect("Jugm.aspx");
     }
 }  

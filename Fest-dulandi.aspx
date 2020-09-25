@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="dulandi.aspx.cs" Inherits="festival_dulandi" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="Fest-dulandi.aspx.cs" Inherits="festival_dulandi" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <script>
@@ -13,8 +13,8 @@
         <asp:Image ID="Image1" runat="server" Height="216px" 
             ImageUrl="~/images/colored.jpg" />
     </p>
-    <p style="font-size: x-large; color: #CC0066">
-        <span class="style3" 
+    <p style="font-size: x-large; color: #CC0066" class="justify-text">
+        <span class="style3 " 
             style="font-family: Georgia, serif; font-size: small; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">
         <strong><em><span style="background-color: #FFCCFF">colored water holi in 
         Brijmandal, color Holi celebrations in Mathura Vrindavan temples.</span></em></strong><span><strong><em><span 
