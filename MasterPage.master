@@ -21,7 +21,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Divagloss</title>
+<title>Online Pilgrimage Website</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
@@ -30,10 +30,8 @@
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/coin-slider.min.js"></script>
-<script>
+   
 
-    $('body').css({ 'background': '#fff url(../pil/images/main_bg.gif) repeat-x left 115px' });
-</script>
     <style type="text/css">
         .main {
 	background:url(../pil/images/hbg_bg.jpg) no-repeat center 115px;
@@ -80,7 +78,7 @@
           <li><a href="abouttemple.aspx" class="style4"><span><strong>about temples</strong></span></a></li>
           <li><a href="login.aspx" class="style4"><span><strong>online sevices</strong></span></a></li>
           <li><a href="timing.aspx" class="style4"><span><strong>timing</strong></span></a></li>
-          <li><a href="contact.html" class="style4"><span><strong>festivals</strong></span></a></li>
+          <li><a href="Default.aspx" class="style4"><span><strong>festivals</strong></span></a></li>
           <%--<li><a href="contact.html"><span><strong>map</strong></span></a></li>--%>
         </ul>
       </div>

@@ -126,4 +126,5 @@ public partial class accomodation : System.Web.UI.Page
         totalAccomodation.Text = (MathuraTotal + VrindaTotal + Guidecharges).ToString();
 
     }
+   
 }

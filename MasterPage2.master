@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head id="Head1" runat="server">
-<title>Divagloss</title>
+<title>Online Pilgrimage Website</title>
 
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
@@ -81,7 +81,7 @@
           <li><a href="abouttemple.aspx"><span>about temples</span></a></li>
           <li><a href="login.aspx"><span>online sevices</span></a></li>
           <li><a href="timing.aspx"><span>timing</span></a></li>
-          <li><a href="contact.html"><span>festivals</span></a></li>
+          <li><a href="Default.aspx"><span>festivals</span></a></li>
 <%--          <li><a href="contact.html"><span>map</span></a></li>
 --%>        </ul>
       </div>

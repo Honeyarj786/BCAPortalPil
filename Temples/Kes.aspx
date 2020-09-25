@@ -26,7 +26,7 @@
            <div class="post_content" style="font-size: small;  text-align: justify;
   text-justify: inter-word;">
               <strong class="style4"> Shri Raja Adraj ji roof and the walls of beautiful paintings depict other 
-            forms of Shri Raja Adraj. And many of the scales of Lord Shri Krishna have been 
+            forms of Shri Raja Adraj. And many of the scales of Lord Shri Krishna have been z
             depicted. It seems as if I have come to the copper age.</strong>
           </div>
           <div class="clr"></div>

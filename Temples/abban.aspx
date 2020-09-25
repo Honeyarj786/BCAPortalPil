@@ -4,7 +4,7 @@
     <script>
     $(function () {
         $('#onlinesidebar').hide();
-        $('#templesidebar').show();
+        $('#templesidebar').hide();
     });
     </script>
 <p class="infopost"><%--Posted <span class="date">on 11 sep 2018</span> by <a href="#">Admin</a> &nbsp;&nbsp;|&nbsp;&nbsp; Filed under <a href="#">templates</a>, <a href="#">internet</a> <a href="#" class="com"><span>1--%>

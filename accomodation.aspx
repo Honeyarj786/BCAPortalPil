@@ -69,7 +69,7 @@
 
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No of Rooms:&nbsp;
-            <asp:DropDownList ID="noOfroomsMathura" runat="server">
+            <asp:DropDownList ID="noOfroomsMathura" runat="server" >
                 <asp:ListItem>1</asp:ListItem>
                 <asp:ListItem>2</asp:ListItem>
                 <asp:ListItem>3</asp:ListItem>
