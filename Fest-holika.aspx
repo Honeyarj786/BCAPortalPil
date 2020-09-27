@@ -5,6 +5,7 @@
     $(function () {
         $('#onlinesidebar').hide();
         $('#templesidebar').hide();
+        $('#festival').show();
     });
     </script>
     <p class="style3" 

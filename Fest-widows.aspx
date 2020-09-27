@@ -5,6 +5,7 @@
     $(function () {
         $('#onlinesidebar').hide();
         $('#templesidebar').hide();
+        $('#festival').show();
     });
     </script>
     <p style="font-size: large; text-decoration: underline; color: #CC6699">
@@ -13,7 +14,7 @@
         <asp:Image ID="Image1" runat="server" ImageUrl="~/images/widows.jpg" />
     </p>
     <p class="style3" 
-        style="box-sizing: inherit; margin: 0px 0px 1.75em; font-family: Merriweather, Georgia, serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;">
+        style="box-sizing: inherit; margin: 0px 0px 1.75em; font-family: Merriweather, Georgia, serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
         <strong><em><span style="background-color: #FFCCFF">Widows in India have 
         always&nbsp;led a difficult&nbsp;life. They were often banished form their homes and were 
         forced to live in&nbsp;ashrams in Varanasi and Vrindavan.&nbsp;They wore white clothes 

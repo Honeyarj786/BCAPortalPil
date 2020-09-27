@@ -35,11 +35,11 @@ public partial class banke : System.Web.UI.Page
         cmd.Parameters.AddWithValue("@person", tb16.Text);
         cmd.Parameters.AddWithValue("@timing", TimingList.Text);
         cmd.Parameters.AddWithValue("@peda", PedaList.Text);
-        cmd.Parameters.AddWithValue("@userid", int.Parse(Session["Userid"] == null ? "0" : Session["Userid"].ToString()));
+        cmd.Parameters.AddWithValue("@userid", int.Parse(Session["userid"] == null ? "0" : Session["userid"].ToString()));
         int bankeid = Convert.ToInt32(cmd.ExecuteScalar());
         conn.Close();
 
-        Response.Redirect("payment.aspx?source=SE&amount=" + Total.Text + "&refid=" + bankeid);   
+        Response.Redirect("payment.aspx?source=SEB&amount=" + Total.Text + "&refid=" + bankeid);   
     
     }
 

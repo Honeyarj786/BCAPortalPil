@@ -15,31 +15,54 @@
     <table style="width: 100%">
         <tr>
             <td style="font-size: small; color: #000066">
-                <b>no of person</b></td>
+                <b>No Of Persons</b></td>
             <td>
-                <asp:TextBox ID="tb19" runat="server" CssClass="style3"></asp:TextBox>
+                <asp:TextBox ID="tb19" runat="server" CssClass="style3" 
+                    ontextchanged="tb19_TextChanged"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td style="font-size: small; color: #000066">
-                <b>timing</b></td>
+                <b>Timings</b></td>
             <td>
-                <asp:TextBox ID="tb20" runat="server" CssClass="style3"></asp:TextBox>
+            <asp:RadioButtonList ID="TimingList2" runat="server" 
+                    
+                    RepeatDirection="Horizontal">
+                    <asp:ListItem>Morning</asp:ListItem>
+                    <asp:ListItem>Evevning</asp:ListItem>
+                </asp:RadioButtonList>    
             </td>
         </tr>
         <tr>
             <td style="font-size: small; " class="style3">
                 &nbsp;</td>
             <td style="font-size: small" class="style3">
-                <strong>timing:<br />
-                SUMMER-5:00 am to 8:pm<br />
-                WINTER:6:00 am TO 7:00pm</strong></td>
+                 <strong><em>TIMING:<br />
+                MORNING-7:45AM-12:00PM<br />
+                EVENING-5:30PM-9:30PM</em></strong></td>
         </tr>
         <tr>
             <td style="font-size: small; color: #000066">
-                <b>sringar</b></td>
+                <b>Sringar</b></td>
             <td>
-                <asp:TextBox ID="tb21" runat="server" CssClass="style3"></asp:TextBox>
+                <asp:RadioButtonList ID="Sringar" runat="server" 
+                   
+                    RepeatDirection="Horizontal" AutoPostBack="True" 
+                    onselectedindexchanged="Sringar_SelectedIndexChanged">
+                    <asp:ListItem>Yes</asp:ListItem>
+                    <asp:ListItem>No</asp:ListItem>
+                </asp:RadioButtonList>
+            </td>
+        </tr>
+         <tr style="font-size: medium">
+            <td style="font-size: small; color: #000066">
+            <span class="style3">
+            
+            </span>
+                <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click">Click Here To Calculate</asp:LinkButton>
+            </td>
+            <td style="font-size: small">
+                <asp:TextBox ID="Total" runat="server"  ></asp:TextBox>
             </td>
         </tr>
         <tr>

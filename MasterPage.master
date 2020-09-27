@@ -159,7 +159,7 @@
             <li><a href="abouttemple.aspx">About temples</a></li>
             <li><a href="login.aspx">online services</a></li>
             <li><a href="timing.aspx">timing</a></li>
-            <li><a href="festivals.aspx">festivals</a></li>
+            <li><a href="Default.aspx">festivals</a></li>
             <%--<li><a href="map.aspx">map</a></li>--%>
           </ul>
           <%--<ul class="ex_menu">

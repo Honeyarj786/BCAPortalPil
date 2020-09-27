@@ -16,7 +16,8 @@
             SELECT TEMPLE</td>
         <td>
             <asp:DropDownList ID="DropDownList1" runat="server" CssClass="style3">
-                <asp:ListItem>banke bihari</asp:ListItem>
+                <asp:ListItem>Banke bihari</asp:ListItem>
+                 <asp:ListItem>Nidhivan</asp:ListItem>
             </asp:DropDownList>
         </td>
     </tr>

@@ -20,7 +20,7 @@ public partial class prasad : System.Web.UI.Page
         SqlConnection conn = new SqlConnection();
         conn.ConnectionString = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
         conn.Open();
-        String str = "insert into prasad (prasd,total, userid)values(@prasd,@total,@userid);SELECT SCOPE_IDENTITY();";
+        String str = "insert into prasad (prasad,total, userid)values(@prasd,@total,@userid);SELECT SCOPE_IDENTITY();";
         SqlCommand cmd = new SqlCommand(str,conn);
         string selectedPrasads = string.Empty;
         if (CheckBoxList1.Items[0].Selected)

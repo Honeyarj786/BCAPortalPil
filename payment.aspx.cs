@@ -22,7 +22,14 @@ public partial class payment : System.Web.UI.Page
             upipay.Visible = false;
             otplabel.Visible = false;
             if (Request.QueryString["source"] != null && Request.QueryString["source"] != string.Empty)
-                PaymentMessage.Text = "Total pending payment for your " + Request.QueryString["source"] + " is Rs ";
+            {
+                var source = string.Empty ;
+                if (Request.QueryString["source"] == "SEB") { source = "Special Entry BankeBihari"; }
+                else if (Request.QueryString["source"] == "SEN") { source = "Special Entry Nidhivan"; }
+                else { source = Request.QueryString["source"]; }
+
+                PaymentMessage.Text = "Total pending payment for your " + source + " is Rs ";
+            }
 
             if (Request.QueryString["amount"] != null && Request.QueryString["amount"] != string.Empty)
                 PaymentMessage.Text +=  Request.QueryString["amount"] + " .";
@@ -93,9 +100,13 @@ public partial class payment : System.Web.UI.Page
             else  if( source != null && source != string.Empty && source == "Donation"){
                 str = "update donation set paymentid=" + paymentid.ToString() + " where id=" + refid;
             }
-            else if (source != null && source != string.Empty && source == "SE")
+            else if (source != null && source != string.Empty && source == "SEB")
             {
                 str = "update banke set paymentid=" + paymentid.ToString() + " where id=" + refid;
+            }
+            else if (source != null && source != string.Empty && source == "SEN")
+            {
+                str = "update nidhivan set paymentid=" + paymentid.ToString() + " where id=" + refid;
             }
             SqlCommand cm2 = new SqlCommand(str, conn);
             cm2.ExecuteNonQuery();
@@ -141,9 +152,13 @@ public partial class payment : System.Web.UI.Page
             {
                 str = "update donation set paymentid=" + paymentid.ToString() + " where id=" + refid;
             }
-            else if (source != null && source != string.Empty && source == "SE")
+            else if (source != null && source != string.Empty && source == "SEB")
             {
                 str = "update banke set paymentid=" + paymentid.ToString() + " where id=" + refid;
+            }
+            else if (source != null && source != string.Empty && source == "SEN")
+            {
+                str = "update nidhivan set paymentid=" + paymentid.ToString() + " where id=" + refid;
             }
             SqlCommand cm2 = new SqlCommand(str, conn);
             cm2.ExecuteNonQuery();

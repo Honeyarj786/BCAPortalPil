@@ -62,10 +62,19 @@
 
 
             <asp:DropDownList ID="MathuraHoteldd" runat="server">
-                <asp:ListItem Selected="True"></asp:ListItem>
-                <asp:ListItem>Hotel</asp:ListItem>
-                <asp:ListItem>Hotel4</asp:ListItem>
+                <asp:ListItem Selected="True">---Select---</asp:ListItem>
+                <asp:ListItem>The Radha Ashok</asp:ListItem>
+                <asp:ListItem>Brijwasi Land Inn</asp:ListItem>
+                <asp:ListItem>The Mansion</asp:ListItem>
+                <asp:ListItem>Hotel Panache</asp:ListItem>
+                <asp:ListItem>Kridha Residency</asp:ListItem>
+                <asp:ListItem>Hotel Wingston Mathura</asp:ListItem>
+                <asp:ListItem>Brijwasi Royal</asp:ListItem>
+                <asp:ListItem>Hotel Silver Star</asp:ListItem>
+                <asp:ListItem>Hotel ganpati Palace</asp:ListItem>
+                <asp:ListItem>Madhav Muskan Residency</asp:ListItem>
             </asp:DropDownList>
+                
 
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No of Rooms:&nbsp;
@@ -81,7 +90,6 @@
                 <asp:ListItem>9</asp:ListItem>
                 <asp:ListItem>10</asp:ListItem>
             </asp:DropDownList>
-
 
         </td>
     </tr>
@@ -109,19 +117,20 @@
         <td style="height: 30px">      
 
 
-            <asp:DropDownList ID="Vrindd" runat="server" ><asp:ListItem Selected="True">Vrinda Resort</asp:ListItem>
-                <asp:ListItem>The Radha Ashok</asp:ListItem>
-                <asp:ListItem>Brijwasi Land Inn</asp:ListItem>
-                <asp:ListItem>The Mansion</asp:ListItem>
-                <asp:ListItem>Hotel Panache</asp:ListItem>
-                <asp:ListItem>Kridha Residency</asp:ListItem>
-                <asp:ListItem>Hotel Wingston Mathura</asp:ListItem>
-                <asp:ListItem>Brijwasi Royal</asp:ListItem>
-                <asp:ListItem>Hotel Silver Star</asp:ListItem>
-                <asp:ListItem>Hotel ganpati Palace</asp:ListItem>
-                <asp:ListItem>Madhav Muskan Residency</asp:ListItem>
+            <asp:DropDownList ID="Vrindd" runat="server" ><asp:ListItem Selected="True">---Select---</asp:ListItem>
+                <asp:ListItem>The VrindWoods</asp:ListItem>
+                <asp:ListItem>Shree Krishna Dham</asp:ListItem>
+                <asp:ListItem>Shri Rawat Kunj</asp:ListItem>
+                <asp:ListItem>Brij View</asp:ListItem>
+                <asp:ListItem>Hotel Dev Residency</asp:ListItem>
+                <asp:ListItem>Rajanshree Dham</asp:ListItem>
+                <asp:ListItem>Santi Sadan</asp:ListItem>
+                <asp:ListItem>Hotel SKD</asp:ListItem>
+                <asp:ListItem>Shri Krishna Divine Dham</asp:ListItem>
+                <asp:ListItem>Shri Gaya Prasad Dham</asp:ListItem>
             </asp:DropDownList>
 
+               
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No of Rooms:&nbsp; <span>
             <asp:DropDownList ID="NoofroomsVrindha" runat="server">
@@ -195,5 +204,6 @@
         </td>
     </tr>
 </table>
+    
 </asp:Content>
 

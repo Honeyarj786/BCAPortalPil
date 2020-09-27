@@ -77,7 +77,7 @@
       </div>
       <div class="menu_nav">
           <ul>
-              <li><a href="home.aspx"><span>Home</a></li>
+              <li><a href="home.aspx"><span>Home</span></a></li>
           <li><a href="abouttemple.aspx"><span>about temples</span></a></li>
           <li><a href="login.aspx"><span>online sevices</span></a></li>
           <li><a href="timing.aspx"><span>timing</span></a></li>
@@ -165,23 +165,21 @@
           <h2 class="star"><span class="style1"><span class="style2"><strong>Festivals</strong></span></span> </h2>
           <div class="clr"></div>
           <ul class="sb_menu">
-            <li><a href="abouttemple.aspx" class="style3"><span class="">Mathura</span></a></li>
-            <li><a href="ShKrishnaJb.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Krishna Janmabhoomi Temple</span></a></li>
-            <li><a href="ShDwarkadishtemp.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Dwarkadhish Temple</span></a></li>
-            <li><a href="Gitaman.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Geeta Mandir</span></a></li>
-            <li><a href="Kes.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Keshav Deo Temple</span></a></li>
-            <li><a href="Bhut.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Bhuteshwar Mahadev Temple</span></a></li>
-              
-             <li><a href="Cham.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Maa Chamunda Temple</span></a></li>
-            <li><a href="abouttemple.aspx" class="style3"><span class="">Vrindavan</span></a></li>
-            <li><a href="Gov.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Garud Govind Ji Temple</span></a></li>
-            <li><a href="Pre.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Prem Mandir</span></a></li>
-            <li><a href="jug.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Jugal Kishore Ji Temple</span></a></li>
-            <li><a href="abban.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Banke Bihari Temple</span></a></li> 
-            <li><a href="Mad.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Radha Madan Mohan Ji Temple </span></a></li> 
-            <li><a href="Nid.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Nidhivan Temple</span></a></li>
-            <li><a href="Isk.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;ISCKON Temple</span></a></li>
-            <li><a href="Gok.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Shri Radha Gokulananda Ji Temple </span></a></li>
+            <li><a href="Default.aspx" class="style3"><span class="">Mathura</span></a></li>
+            <li><a href="Fest-Kr.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Krishna Janamastmi</span></a></li>
+            <li><a href="Fest-ra.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Radha Astami</span></a></li>
+            <li><a href="Fest-holi.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Holi</span></a></li>
+            <li><a href="Fest-go.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Goverdhan Puja</span></a></li>
+            <li><a href="Fest-bh.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Bhai Duj</span></a></li>              
+             <li><a href="Fest-rath.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Rath Yatra</span></a></li>
+
+            <li><a href="Default.aspx" class="style3"><span class="">Vrindavan</span></a></li>
+            <li><a href="Fest-la.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Lathmar</span></a></li>
+            <li><a href="Fest-range.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Range Bharni Ekadashi</span></a></li>
+            <li><a href="Fest-widows.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Widows holi</span></a></li>
+            <li><a href="Fest-holika.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Holika Dahan</span></a></li> 
+            <li><a href="Fest-dulandi.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Dulandi Holi </span></a></li> 
+            <li><a href="Fest-rang.aspx" class="style3"><span class="style4">&nbsp;&nbsp;&nbsp;Rang Panchmi</span></a></li>
           </ul>
         </div>
      

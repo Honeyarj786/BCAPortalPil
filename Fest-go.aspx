@@ -5,6 +5,7 @@
     $(function () {
         $('#onlinesidebar').hide();
         $('#templesidebar').hide();
+        $('#festival').show();
     });
     </script>
     <p style="text-decoration: underline; font-size: x-large; color: #CC0066">
